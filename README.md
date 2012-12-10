@@ -1,13 +1,13 @@
 # iStudy
 
-은택과 함께하는 iOS 스터디~
+@redkookie 와 @importre 가 함께하는 iOS 스터디~
 
 * 목표 : `iOS` 플랫폼에서 테스트가 필요할 때, UI 구현에 막히지 않고 테스트 앱을 구현할 수 있는 능력 배양(!?)
 
 ## 진행방법
 
-* 주별 일정 진행
-* 매주 금요일마다 작성된 코드 리뷰 & 피드백
+* 매주 주별 일정 진행
+* 금요일마다 작성된 코드 리뷰 & 피드백
 
 ## 일정
 
@@ -45,3 +45,9 @@ multi threading | [`grand central dispatch`](http://www.raywenderlich.com/4295/m
 ### 5주차 ~ 
 
 미니 프로젝트(주제 아직 미정)
+
+## 참고자료
+
+* [Learn iOS SDK Development from Scratch!](http://mobile.tutsplus.com/tutorials/iphone/learn-ios-sdk-development-from-scratch/)
+	* 12월 3일 부터 시작된 iOS 개발에 관한 튜토리얼 시리즈
+	* 매주 업데이트되며, 지금까지 찾은 튜토리얼 중 가장 최신의 내용을 다루고 있음
