@@ -1,6 +1,6 @@
 # iStudy
 
-@redkookie 와 @importre 가 함께하는 iOS 스터디~
+[@redkookie](https://github.com/redkookie) 와 [@importre](https://github.com/importre) 가 함께하는 iOS 스터디~
 
 * 목표 : `iOS` 플랫폼에서 테스트가 필요할 때, UI 구현에 막히지 않고 테스트 앱을 구현할 수 있는 능력 배양(!?)
 
