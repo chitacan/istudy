@@ -51,3 +51,6 @@ multi threading | [`grand central dispatch`](http://www.raywenderlich.com/4295/m
 * [Learn iOS SDK Development from Scratch!](http://mobile.tutsplus.com/tutorials/iphone/learn-ios-sdk-development-from-scratch/)
 	* 12월 3일 부터 시작된 iOS 개발에 관한 튜토리얼 시리즈
 	* 매주 업데이트되며, 지금까지 찾은 튜토리얼 중 가장 최신의 내용을 다루고 있음
+
+* [iffytheperfect1983의 youtube 채널](http://www.youtube.com/user/iffytheperfect1983/videos?sort=dd&flow=list&view=0)
+	* 비교적 최신 xcode(4.4이후) 버전을 바탕으로 다양한 주제들에 대한 screen cast.
