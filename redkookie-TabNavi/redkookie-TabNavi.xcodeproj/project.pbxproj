@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CDA6A65166DB9DE00F9533E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDA6A64166DB9DE00F9533E /* UIKit.framework */; };
+		5CDA6A67166DB9DE00F9533E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDA6A66166DB9DE00F9533E /* Foundation.framework */; };
+		5CDA6A69166DB9DE00F9533E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDA6A68166DB9DE00F9533E /* CoreGraphics.framework */; };
+		5CDA6A6F166DB9DE00F9533E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CDA6A6D166DB9DE00F9533E /* InfoPlist.strings */; };
+		5CDA6A71166DB9DE00F9533E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA6A70166DB9DE00F9533E /* main.m */; };
+		5CDA6A75166DB9DE00F9533E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA6A74166DB9DE00F9533E /* AppDelegate.m */; };
+		5CDA6A78166DB9DE00F9533E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA6A77166DB9DE00F9533E /* FirstViewController.m */; };
+		5CDA6A7A166DB9DE00F9533E /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDA6A79166DB9DE00F9533E /* first.png */; };
+		5CDA6A7C166DB9DE00F9533E /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDA6A7B166DB9DE00F9533E /* first@2x.png */; };
+		5CDA6A7F166DB9DE00F9533E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA6A7E166DB9DE00F9533E /* SecondViewController.m */; };
+		5CDA6A81166DB9DE00F9533E /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDA6A80166DB9DE00F9533E /* second.png */; };
+		5CDA6A83166DB9DE00F9533E /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDA6A82166DB9DE00F9533E /* second@2x.png */; };
+		5CDA6A86166DB9DE00F9533E /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CDA6A84166DB9DE00F9533E /* FirstViewController.xib */; };
+		5CDA6A89166DB9DE00F9533E /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CDA6A87166DB9DE00F9533E /* SecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5CDA6A60166DB9DE00F9533E /* redkookie-TabNavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "redkookie-TabNavi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDA6A64166DB9DE00F9533E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5CDA6A66166DB9DE00F9533E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5CDA6A68166DB9DE00F9533E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5CDA6A6C166DB9DE00F9533E /* redkookie-TabNavi-Info.plist */ = {isa = PBXFileReference; path = "redkookie-TabNavi-Info.plist"; sourceTree = "<group>"; };
+		5CDA6A6E166DB9DE00F9533E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5CDA6A70166DB9DE00F9533E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CDA6A72166DB9DE00F9533E /* redkookie-TabNavi-Prefix.pch */ = {isa = PBXFileReference; path = "redkookie-TabNavi-Prefix.pch"; sourceTree = "<group>"; };
+		5CDA6A73166DB9DE00F9533E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CDA6A74166DB9DE00F9533E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5CDA6A76166DB9DE00F9533E /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		5CDA6A77166DB9DE00F9533E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		5CDA6A79166DB9DE00F9533E /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		5CDA6A7B166DB9DE00F9533E /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		5CDA6A7D166DB9DE00F9533E /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		5CDA6A7E166DB9DE00F9533E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5CDA6A80166DB9DE00F9533E /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		5CDA6A82166DB9DE00F9533E /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		5CDA6A85166DB9DE00F9533E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		5CDA6A88166DB9DE00F9533E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CDA6A5D166DB9DE00F9533E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDA6A65166DB9DE00F9533E /* UIKit.framework in Frameworks */,
+				5CDA6A67166DB9DE00F9533E /* Foundation.framework in Frameworks */,
+				5CDA6A69166DB9DE00F9533E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CDA6A55166DB9DE00F9533E = {
+			isa = PBXGroup;
+			children = (
+				5CDA6A6A166DB9DE00F9533E /* redkookie-TabNavi */,
+				5CDA6A63166DB9DE00F9533E /* Frameworks */,
+				5CDA6A61166DB9DE00F9533E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CDA6A61166DB9DE00F9533E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CDA6A60166DB9DE00F9533E /* redkookie-TabNavi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CDA6A63166DB9DE00F9533E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CDA6A64166DB9DE00F9533E /* UIKit.framework */,
+				5CDA6A66166DB9DE00F9533E /* Foundation.framework */,
+				5CDA6A68166DB9DE00F9533E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CDA6A6A166DB9DE00F9533E /* redkookie-TabNavi */ = {
+			isa = PBXGroup;
+			children = (
+				5CDA6A73166DB9DE00F9533E /* AppDelegate.h */,
+				5CDA6A74166DB9DE00F9533E /* AppDelegate.m */,
+				5CDA6A76166DB9DE00F9533E /* FirstViewController.h */,
+				5CDA6A77166DB9DE00F9533E /* FirstViewController.m */,
+				5CDA6A79166DB9DE00F9533E /* first.png */,
+				5CDA6A7B166DB9DE00F9533E /* first@2x.png */,
+				5CDA6A7D166DB9DE00F9533E /* SecondViewController.h */,
+				5CDA6A7E166DB9DE00F9533E /* SecondViewController.m */,
+				5CDA6A80166DB9DE00F9533E /* second.png */,
+				5CDA6A82166DB9DE00F9533E /* second@2x.png */,
+				5CDA6A84166DB9DE00F9533E /* FirstViewController.xib */,
+				5CDA6A87166DB9DE00F9533E /* SecondViewController.xib */,
+				5CDA6A6B166DB9DE00F9533E /* Supporting Files */,
+			);
+			path = "redkookie-TabNavi";
+			sourceTree = "<group>";
+		};
+		5CDA6A6B166DB9DE00F9533E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CDA6A6C166DB9DE00F9533E /* redkookie-TabNavi-Info.plist */,
+				5CDA6A6D166DB9DE00F9533E /* InfoPlist.strings */,
+				5CDA6A70166DB9DE00F9533E /* main.m */,
+				5CDA6A72166DB9DE00F9533E /* redkookie-TabNavi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CDA6A5F166DB9DE00F9533E /* redkookie-TabNavi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CDA6A8C166DB9DE00F9533E /* Build configuration list for PBXNativeTarget "redkookie-TabNavi" */;
+			buildPhases = (
+				5CDA6A5C166DB9DE00F9533E /* Sources */,
+				5CDA6A5D166DB9DE00F9533E /* Frameworks */,
+				5CDA6A5E166DB9DE00F9533E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "redkookie-TabNavi";
+			productName = "redkookie-TabNavi";
+			productReference = 5CDA6A60166DB9DE00F9533E /* redkookie-TabNavi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CDA6A57166DB9DE00F9533E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = AhnLab;
+			};
+			buildConfigurationList = 5CDA6A5A166DB9DE00F9533E /* Build configuration list for PBXProject "redkookie-TabNavi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5CDA6A55166DB9DE00F9533E;
+			productRefGroup = 5CDA6A61166DB9DE00F9533E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CDA6A5F166DB9DE00F9533E /* redkookie-TabNavi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CDA6A5E166DB9DE00F9533E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDA6A6F166DB9DE00F9533E /* InfoPlist.strings in Resources */,
+				5CDA6A7A166DB9DE00F9533E /* first.png in Resources */,
+				5CDA6A7C166DB9DE00F9533E /* first@2x.png in Resources */,
+				5CDA6A81166DB9DE00F9533E /* second.png in Resources */,
+				5CDA6A83166DB9DE00F9533E /* second@2x.png in Resources */,
+				5CDA6A86166DB9DE00F9533E /* FirstViewController.xib in Resources */,
+				5CDA6A89166DB9DE00F9533E /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CDA6A5C166DB9DE00F9533E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDA6A71166DB9DE00F9533E /* main.m in Sources */,
+				5CDA6A75166DB9DE00F9533E /* AppDelegate.m in Sources */,
+				5CDA6A78166DB9DE00F9533E /* FirstViewController.m in Sources */,
+				5CDA6A7F166DB9DE00F9533E /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5CDA6A6D166DB9DE00F9533E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CDA6A6E166DB9DE00F9533E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5CDA6A84166DB9DE00F9533E /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CDA6A85166DB9DE00F9533E /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		5CDA6A87166DB9DE00F9533E /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CDA6A88166DB9DE00F9533E /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CDA6A8A166DB9DE00F9533E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5CDA6A8B166DB9DE00F9533E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CDA6A8D166DB9DE00F9533E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redkookie-TabNavi/redkookie-TabNavi-Prefix.pch";
+				INFOPLIST_FILE = "redkookie-TabNavi/redkookie-TabNavi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5CDA6A8E166DB9DE00F9533E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redkookie-TabNavi/redkookie-TabNavi-Prefix.pch";
+				INFOPLIST_FILE = "redkookie-TabNavi/redkookie-TabNavi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CDA6A5A166DB9DE00F9533E /* Build configuration list for PBXProject "redkookie-TabNavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDA6A8A166DB9DE00F9533E /* Debug */,
+				5CDA6A8B166DB9DE00F9533E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CDA6A8C166DB9DE00F9533E /* Build configuration list for PBXNativeTarget "redkookie-TabNavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDA6A8D166DB9DE00F9533E /* Debug */,
+				5CDA6A8E166DB9DE00F9533E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CDA6A57166DB9DE00F9533E /* Project object */;
+}
