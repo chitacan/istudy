@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C0189E1167A1F9D00ED2117 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0189E0167A1F9D00ED2117 /* UIKit.framework */; };
+		5C0189E3167A1F9D00ED2117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0189E2167A1F9D00ED2117 /* Foundation.framework */; };
+		5C0189E5167A1F9D00ED2117 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0189E4167A1F9D00ED2117 /* CoreGraphics.framework */; };
+		5C0189EB167A1F9D00ED2117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C0189E9167A1F9D00ED2117 /* InfoPlist.strings */; };
+		5C0189ED167A1F9D00ED2117 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0189EC167A1F9D00ED2117 /* main.m */; };
+		5C0189F1167A1F9D00ED2117 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0189F0167A1F9D00ED2117 /* AppDelegate.m */; };
+		5C0189F4167A1F9D00ED2117 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0189F3167A1F9D00ED2117 /* MasterViewController.m */; };
+		5C0189F7167A1F9E00ED2117 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0189F6167A1F9E00ED2117 /* DetailViewController.m */; };
+		5C0189FA167A1F9E00ED2117 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0189F8167A1F9E00ED2117 /* MasterViewController.xib */; };
+		5C0189FD167A1F9E00ED2117 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0189FB167A1F9E00ED2117 /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C0189DC167A1F9D00ED2117 /* redkookie-TableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "redkookie-TableViewController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0189E0167A1F9D00ED2117 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5C0189E2167A1F9D00ED2117 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5C0189E4167A1F9D00ED2117 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5C0189E8167A1F9D00ED2117 /* redkookie-TableViewController-Info.plist */ = {isa = PBXFileReference; path = "redkookie-TableViewController-Info.plist"; sourceTree = "<group>"; };
+		5C0189EA167A1F9D00ED2117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C0189EC167A1F9D00ED2117 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C0189EE167A1F9D00ED2117 /* redkookie-TableViewController-Prefix.pch */ = {isa = PBXFileReference; path = "redkookie-TableViewController-Prefix.pch"; sourceTree = "<group>"; };
+		5C0189EF167A1F9D00ED2117 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C0189F0167A1F9D00ED2117 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C0189F2167A1F9D00ED2117 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		5C0189F3167A1F9D00ED2117 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		5C0189F5167A1F9D00ED2117 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		5C0189F6167A1F9E00ED2117 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		5C0189F9167A1F9E00ED2117 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		5C0189FC167A1F9E00ED2117 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C0189D9167A1F9D00ED2117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0189E1167A1F9D00ED2117 /* UIKit.framework in Frameworks */,
+				5C0189E3167A1F9D00ED2117 /* Foundation.framework in Frameworks */,
+				5C0189E5167A1F9D00ED2117 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C0189D1167A1F9D00ED2117 = {
+			isa = PBXGroup;
+			children = (
+				5C0189E6167A1F9D00ED2117 /* redkookie-TableViewController */,
+				5C0189DF167A1F9D00ED2117 /* Frameworks */,
+				5C0189DD167A1F9D00ED2117 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C0189DD167A1F9D00ED2117 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C0189DC167A1F9D00ED2117 /* redkookie-TableViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C0189DF167A1F9D00ED2117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C0189E0167A1F9D00ED2117 /* UIKit.framework */,
+				5C0189E2167A1F9D00ED2117 /* Foundation.framework */,
+				5C0189E4167A1F9D00ED2117 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C0189E6167A1F9D00ED2117 /* redkookie-TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5C0189EF167A1F9D00ED2117 /* AppDelegate.h */,
+				5C0189F0167A1F9D00ED2117 /* AppDelegate.m */,
+				5C0189F2167A1F9D00ED2117 /* MasterViewController.h */,
+				5C0189F3167A1F9D00ED2117 /* MasterViewController.m */,
+				5C0189F5167A1F9D00ED2117 /* DetailViewController.h */,
+				5C0189F6167A1F9E00ED2117 /* DetailViewController.m */,
+				5C0189F8167A1F9E00ED2117 /* MasterViewController.xib */,
+				5C0189FB167A1F9E00ED2117 /* DetailViewController.xib */,
+				5C0189E7167A1F9D00ED2117 /* Supporting Files */,
+			);
+			path = "redkookie-TableViewController";
+			sourceTree = "<group>";
+		};
+		5C0189E7167A1F9D00ED2117 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C0189E8167A1F9D00ED2117 /* redkookie-TableViewController-Info.plist */,
+				5C0189E9167A1F9D00ED2117 /* InfoPlist.strings */,
+				5C0189EC167A1F9D00ED2117 /* main.m */,
+				5C0189EE167A1F9D00ED2117 /* redkookie-TableViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C0189DB167A1F9D00ED2117 /* redkookie-TableViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C018A00167A1F9E00ED2117 /* Build configuration list for PBXNativeTarget "redkookie-TableViewController" */;
+			buildPhases = (
+				5C0189D8167A1F9D00ED2117 /* Sources */,
+				5C0189D9167A1F9D00ED2117 /* Frameworks */,
+				5C0189DA167A1F9D00ED2117 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "redkookie-TableViewController";
+			productName = "redkookie-TableViewController";
+			productReference = 5C0189DC167A1F9D00ED2117 /* redkookie-TableViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C0189D3167A1F9D00ED2117 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = AhnLab;
+			};
+			buildConfigurationList = 5C0189D6167A1F9D00ED2117 /* Build configuration list for PBXProject "redkookie-TableViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C0189D1167A1F9D00ED2117;
+			productRefGroup = 5C0189DD167A1F9D00ED2117 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C0189DB167A1F9D00ED2117 /* redkookie-TableViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C0189DA167A1F9D00ED2117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0189EB167A1F9D00ED2117 /* InfoPlist.strings in Resources */,
+				5C0189FA167A1F9E00ED2117 /* MasterViewController.xib in Resources */,
+				5C0189FD167A1F9E00ED2117 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C0189D8167A1F9D00ED2117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0189ED167A1F9D00ED2117 /* main.m in Sources */,
+				5C0189F1167A1F9D00ED2117 /* AppDelegate.m in Sources */,
+				5C0189F4167A1F9D00ED2117 /* MasterViewController.m in Sources */,
+				5C0189F7167A1F9E00ED2117 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C0189E9167A1F9D00ED2117 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0189EA167A1F9D00ED2117 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5C0189F8167A1F9E00ED2117 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0189F9167A1F9E00ED2117 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		5C0189FB167A1F9E00ED2117 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0189FC167A1F9E00ED2117 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C0189FE167A1F9E00ED2117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C0189FF167A1F9E00ED2117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C018A01167A1F9E00ED2117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redkookie-TableViewController/redkookie-TableViewController-Prefix.pch";
+				INFOPLIST_FILE = "redkookie-TableViewController/redkookie-TableViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5C018A02167A1F9E00ED2117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redkookie-TableViewController/redkookie-TableViewController-Prefix.pch";
+				INFOPLIST_FILE = "redkookie-TableViewController/redkookie-TableViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C0189D6167A1F9D00ED2117 /* Build configuration list for PBXProject "redkookie-TableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C0189FE167A1F9E00ED2117 /* Debug */,
+				5C0189FF167A1F9E00ED2117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C018A00167A1F9E00ED2117 /* Build configuration list for PBXNativeTarget "redkookie-TableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C018A01167A1F9E00ED2117 /* Debug */,
+				5C018A02167A1F9E00ED2117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C0189D3167A1F9D00ED2117 /* Project object */;
+}
