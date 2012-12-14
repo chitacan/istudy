@@ -18,6 +18,10 @@
 		2DFFFB10167B5A46007B4AA6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFFB0F167B5A46007B4AA6 /* Default@2x.png */; };
 		2DFFFB12167B5A46007B4AA6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFFB11167B5A46007B4AA6 /* Default-568h@2x.png */; };
 		2DFFFB15167B5A46007B4AA6 /* importre_viewcontroller.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFFB13167B5A46007B4AA6 /* importre_viewcontroller.xcdatamodeld */; };
+		2DFFFB1E167B5A70007B4AA6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFFB1C167B5A70007B4AA6 /* MainViewController.m */; };
+		2DFFFB1F167B5A70007B4AA6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFFB1D167B5A70007B4AA6 /* MainViewController.xib */; };
+		2DFFFB29167B69CD007B4AA6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFFB27167B69CD007B4AA6 /* DetailViewController.m */; };
+		2DFFFB2A167B69CD007B4AA6 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFFB28167B69CD007B4AA6 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,12 @@
 		2DFFFB0F167B5A46007B4AA6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2DFFFB11167B5A46007B4AA6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2DFFFB14167B5A46007B4AA6 /* importre_viewcontroller.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = importre_viewcontroller.xcdatamodel; sourceTree = "<group>"; };
+		2DFFFB1B167B5A70007B4AA6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2DFFFB1C167B5A70007B4AA6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2DFFFB1D167B5A70007B4AA6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2DFFFB26167B69CD007B4AA6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2DFFFB27167B69CD007B4AA6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2DFFFB28167B69CD007B4AA6 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,12 @@
 				2DFFFB0B167B5A46007B4AA6 /* AppDelegate.m */,
 				2DFFFB13167B5A46007B4AA6 /* importre_viewcontroller.xcdatamodeld */,
 				2DFFFB02167B5A46007B4AA6 /* Supporting Files */,
+				2DFFFB1B167B5A70007B4AA6 /* MainViewController.h */,
+				2DFFFB1C167B5A70007B4AA6 /* MainViewController.m */,
+				2DFFFB1D167B5A70007B4AA6 /* MainViewController.xib */,
+				2DFFFB26167B69CD007B4AA6 /* DetailViewController.h */,
+				2DFFFB27167B69CD007B4AA6 /* DetailViewController.m */,
+				2DFFFB28167B69CD007B4AA6 /* DetailViewController.xib */,
 			);
 			path = "importre-viewcontroller";
 			sourceTree = "<group>";
@@ -161,6 +177,8 @@
 				2DFFFB0E167B5A46007B4AA6 /* Default.png in Resources */,
 				2DFFFB10167B5A46007B4AA6 /* Default@2x.png in Resources */,
 				2DFFFB12167B5A46007B4AA6 /* Default-568h@2x.png in Resources */,
+				2DFFFB1F167B5A70007B4AA6 /* MainViewController.xib in Resources */,
+				2DFFFB2A167B69CD007B4AA6 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +192,8 @@
 				2DFFFB08167B5A46007B4AA6 /* main.m in Sources */,
 				2DFFFB0C167B5A46007B4AA6 /* AppDelegate.m in Sources */,
 				2DFFFB15167B5A46007B4AA6 /* importre_viewcontroller.xcdatamodeld in Sources */,
+				2DFFFB1E167B5A70007B4AA6 /* MainViewController.m in Sources */,
+				2DFFFB29167B69CD007B4AA6 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

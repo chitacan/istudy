@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+// tableview controller
+#import "MainViewController.h"
+
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -18,6 +21,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    // 초기 화면에 보일 테이블뷰 생성
+    // 네비게이션 컨트롤러에 테이블뷰를 넣고, 루트에 네비게이션 넣기
+    MainViewController *controller = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    self.naviController = [[UINavigationController alloc] initWithRootViewController:controller];
+    self.window.rootViewController = self.naviController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
