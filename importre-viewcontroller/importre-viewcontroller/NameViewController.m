@@ -126,6 +126,18 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    
+//    UIAlertView *msgAlert = [[UIAlertView alloc]
+//                             initWithTitle:@"Row Selected"
+//                             message:self.names[indexPath.row]
+//                             delegate:nil
+//                             cancelButtonTitle:@"OK"
+//                             otherButtonTitles:nil];
+//    [msgAlert show];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

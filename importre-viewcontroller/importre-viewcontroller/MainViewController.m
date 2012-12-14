@@ -131,7 +131,6 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     
-    if(indexPath.row)
     if(nil == self.viewController) {
         self.viewController = [[NameViewController alloc] initWithNibName:@"NameViewController" bundle:nil];
     }
