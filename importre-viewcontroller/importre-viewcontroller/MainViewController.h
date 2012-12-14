@@ -21,6 +21,6 @@
 // 6. search into a tableview
 @property (strong, nonatomic) NSMutableArray *examples;
 
-@property (strong, nonatomic) DetailViewController *viewController;
+@property (strong, nonatomic) UIViewController *viewController;
 
 @end

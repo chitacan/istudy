@@ -22,6 +22,9 @@
 		2DFFFB1F167B5A70007B4AA6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFFB1D167B5A70007B4AA6 /* MainViewController.xib */; };
 		2DFFFB29167B69CD007B4AA6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFFB27167B69CD007B4AA6 /* DetailViewController.m */; };
 		2DFFFB2A167B69CD007B4AA6 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFFB28167B69CD007B4AA6 /* DetailViewController.xib */; };
+		2DFFFB2C167B72A4007B4AA6 /* names.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFFB2B167B72A4007B4AA6 /* names.plist */; };
+		2DFFFB30167B7339007B4AA6 /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFFB2E167B7338007B4AA6 /* NameViewController.m */; };
+		2DFFFB31167B7339007B4AA6 /* NameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFFB2F167B7339007B4AA6 /* NameViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,10 @@
 		2DFFFB26167B69CD007B4AA6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2DFFFB27167B69CD007B4AA6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2DFFFB28167B69CD007B4AA6 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		2DFFFB2B167B72A4007B4AA6 /* names.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = names.plist; sourceTree = "<group>"; };
+		2DFFFB2D167B7338007B4AA6 /* NameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
+		2DFFFB2E167B7338007B4AA6 /* NameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
+		2DFFFB2F167B7339007B4AA6 /* NameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +111,9 @@
 				2DFFFB26167B69CD007B4AA6 /* DetailViewController.h */,
 				2DFFFB27167B69CD007B4AA6 /* DetailViewController.m */,
 				2DFFFB28167B69CD007B4AA6 /* DetailViewController.xib */,
+				2DFFFB2D167B7338007B4AA6 /* NameViewController.h */,
+				2DFFFB2E167B7338007B4AA6 /* NameViewController.m */,
+				2DFFFB2F167B7339007B4AA6 /* NameViewController.xib */,
 			);
 			path = "importre-viewcontroller";
 			sourceTree = "<group>";
@@ -118,6 +128,7 @@
 				2DFFFB0D167B5A46007B4AA6 /* Default.png */,
 				2DFFFB0F167B5A46007B4AA6 /* Default@2x.png */,
 				2DFFFB11167B5A46007B4AA6 /* Default-568h@2x.png */,
+				2DFFFB2B167B72A4007B4AA6 /* names.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -179,6 +190,8 @@
 				2DFFFB12167B5A46007B4AA6 /* Default-568h@2x.png in Resources */,
 				2DFFFB1F167B5A70007B4AA6 /* MainViewController.xib in Resources */,
 				2DFFFB2A167B69CD007B4AA6 /* DetailViewController.xib in Resources */,
+				2DFFFB2C167B72A4007B4AA6 /* names.plist in Resources */,
+				2DFFFB31167B7339007B4AA6 /* NameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +207,7 @@
 				2DFFFB15167B5A46007B4AA6 /* importre_viewcontroller.xcdatamodeld in Sources */,
 				2DFFFB1E167B5A70007B4AA6 /* MainViewController.m in Sources */,
 				2DFFFB29167B69CD007B4AA6 /* DetailViewController.m in Sources */,
+				2DFFFB30167B7339007B4AA6 /* NameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

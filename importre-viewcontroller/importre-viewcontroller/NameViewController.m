@@ -1,19 +1,18 @@
 //
-//  MainViewController.m
+//  NameViewController.m
 //  importre-viewcontroller
 //
 //  Created by importre on 12. 12. 14..
 //  Copyright (c) 2012년 AhnLab. All rights reserved.
 //
 
-#import "MainViewController.h"
 #import "NameViewController.h"
 
-@interface MainViewController ()
+@interface NameViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation NameViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -34,16 +33,13 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.title = @"view controller examples";
-    self.examples = [[NSMutableArray alloc] initWithObjects:
-                     @"UITableView with NSArray",
-                     @"Delete a row from UITableView",
-                     @"Table with property list",
-                     @"Handle a row selection",
-                     @"Custom UITableViewCell",
-                     @"Search into a TableView",
-                     nil];
-    self.viewController = nil;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"names" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    self.names = [[NSArray alloc] initWithObjects:
+                  [dict objectForKey:@"name1"],
+                  [dict objectForKey:@"name2"],
+                  [dict objectForKey:@"name3"],
+                  nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,7 +59,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.examples.count;
+    return self.names.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -75,7 +71,7 @@
     }
     
     // Configure the cell...
-    cell.textLabel.text = self.examples[indexPath.row];
+    cell.textLabel.text = self.names[indexPath.row];
     
     return cell;
 }
@@ -89,19 +85,19 @@
 }
 */
 
+/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [self.examples removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-        //[tableView reloadData];
-    }
+    }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }
+    }   
 }
+*/
 
 /*
 // Override to support rearranging the table view.
@@ -130,14 +126,6 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    
-    if(indexPath.row)
-    if(nil == self.viewController) {
-        self.viewController = [[NameViewController alloc] initWithNibName:@"NameViewController" bundle:nil];
-    }
-    
-    [self.navigationController pushViewController:self.viewController animated:YES];
-    self.viewController.title = [[NSString alloc] initWithFormat:@"%d", indexPath.row];
 }
 
 @end
