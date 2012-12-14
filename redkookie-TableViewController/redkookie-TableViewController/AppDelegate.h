@@ -14,4 +14,6 @@
 
 @property (strong, nonatomic) UINavigationController *navigationController;
 
+@property (strong, nonatomic) NSMutableArray* arrayData;
+
 @end

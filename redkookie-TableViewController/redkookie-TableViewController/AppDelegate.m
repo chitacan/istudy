@@ -10,10 +10,13 @@
 
 #import "MasterViewController.h"
 
+#import "TableItem.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
+@synthesize arrayData = _arrayData;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -23,6 +26,15 @@
     MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
     self.window.rootViewController = self.navigationController;
+    
+    TableItem* item1 = [[TableItem alloc] initWithItemName:@"first" andDes:@"first des"];
+    TableItem* item2 = [[TableItem alloc] initWithItemName:@"second" andDes:@"second des"];
+    TableItem* item3 = [[TableItem alloc] initWithItemName:@"third" andDes:@"third des"];
+    TableItem* item4 = [[TableItem alloc] initWithItemName:@"fourth" andDes:@"fourth des"];
+    
+    _arrayData = [[NSMutableArray alloc] initWithObjects:item1, item2, item3, item4, nil];
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

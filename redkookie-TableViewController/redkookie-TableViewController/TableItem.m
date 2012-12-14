@@ -10,4 +10,15 @@
 
 @implementation TableItem
 
+@synthesize itemTitle = _itemTitle;
+@synthesize itemDes = _itemDes;
+
+- (id)initWithItemName:(NSString *)title andDes:(NSString *)des
+{
+    self.itemTitle = title;
+    self.itemDes = des;
+    
+    return self;
+}
+
 @end

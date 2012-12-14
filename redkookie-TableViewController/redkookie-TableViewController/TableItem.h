@@ -9,5 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface TableItem : NSObject
+{
+    NSString* itemTitle;
+    NSString* itemDes;
+}
+
+@property (strong, nonatomic) NSString* itemTitle;
+
+@property (strong, nonatomic) NSString* itemDes;
+
+- (id)initWithItemName:(NSString*)title andDes:(NSString*)des;
 
 @end

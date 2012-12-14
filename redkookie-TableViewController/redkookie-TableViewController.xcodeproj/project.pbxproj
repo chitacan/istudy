@@ -17,6 +17,8 @@
 		5C0189F7167A1F9E00ED2117 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0189F6167A1F9E00ED2117 /* DetailViewController.m */; };
 		5C0189FA167A1F9E00ED2117 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0189F8167A1F9E00ED2117 /* MasterViewController.xib */; };
 		5C0189FD167A1F9E00ED2117 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0189FB167A1F9E00ED2117 /* DetailViewController.xib */; };
+		5C018A05167A21B000ED2117 /* TableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C018A04167A21B000ED2117 /* TableItem.m */; };
+		5C018A07167A2DC500ED2117 /* DataProperty.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C018A06167A2DC400ED2117 /* DataProperty.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +26,21 @@
 		5C0189E0167A1F9D00ED2117 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5C0189E2167A1F9D00ED2117 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5C0189E4167A1F9D00ED2117 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5C0189E8167A1F9D00ED2117 /* redkookie-TableViewController-Info.plist */ = {isa = PBXFileReference; path = "redkookie-TableViewController-Info.plist"; sourceTree = "<group>"; };
+		5C0189E8167A1F9D00ED2117 /* redkookie-TableViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "redkookie-TableViewController-Info.plist"; sourceTree = "<group>"; };
 		5C0189EA167A1F9D00ED2117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C0189EC167A1F9D00ED2117 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5C0189EE167A1F9D00ED2117 /* redkookie-TableViewController-Prefix.pch */ = {isa = PBXFileReference; path = "redkookie-TableViewController-Prefix.pch"; sourceTree = "<group>"; };
-		5C0189EF167A1F9D00ED2117 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C0189EE167A1F9D00ED2117 /* redkookie-TableViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redkookie-TableViewController-Prefix.pch"; sourceTree = "<group>"; };
+		5C0189EF167A1F9D00ED2117 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C0189F0167A1F9D00ED2117 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5C0189F2167A1F9D00ED2117 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		5C0189F2167A1F9D00ED2117 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		5C0189F3167A1F9D00ED2117 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		5C0189F5167A1F9D00ED2117 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		5C0189F5167A1F9D00ED2117 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		5C0189F6167A1F9E00ED2117 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		5C0189F9167A1F9E00ED2117 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		5C0189FC167A1F9E00ED2117 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		5C018A03167A21B000ED2117 /* TableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableItem.h; sourceTree = "<group>"; };
+		5C018A04167A21B000ED2117 /* TableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableItem.m; sourceTree = "<group>"; };
+		5C018A06167A2DC400ED2117 /* DataProperty.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataProperty.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,9 @@
 				5C0189F8167A1F9E00ED2117 /* MasterViewController.xib */,
 				5C0189FB167A1F9E00ED2117 /* DetailViewController.xib */,
 				5C0189E7167A1F9D00ED2117 /* Supporting Files */,
+				5C018A03167A21B000ED2117 /* TableItem.h */,
+				5C018A04167A21B000ED2117 /* TableItem.m */,
+				5C018A06167A2DC400ED2117 /* DataProperty.plist */,
 			);
 			path = "redkookie-TableViewController";
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 				5C0189EB167A1F9D00ED2117 /* InfoPlist.strings in Resources */,
 				5C0189FA167A1F9E00ED2117 /* MasterViewController.xib in Resources */,
 				5C0189FD167A1F9E00ED2117 /* DetailViewController.xib in Resources */,
+				5C018A07167A2DC500ED2117 /* DataProperty.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +183,7 @@
 				5C0189F1167A1F9D00ED2117 /* AppDelegate.m in Sources */,
 				5C0189F4167A1F9D00ED2117 /* MasterViewController.m in Sources */,
 				5C0189F7167A1F9E00ED2117 /* DetailViewController.m in Sources */,
+				5C018A05167A21B000ED2117 /* TableItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
