@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0189C8167A19C000ED2117 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0189C6167A19C000ED2117 /* CustomViewController.m */; };
+		5C0189C9167A19C000ED2117 /* CustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0189C7167A19C000ED2117 /* CustomViewController.xib */; };
+		5C0189D0167A1C9F00ED2117 /* bs.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0189CF167A1C9F00ED2117 /* bs.png */; };
 		5CEEA0231675FABB00B04C34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEEA0221675FABB00B04C34 /* UIKit.framework */; };
 		5CEEA0251675FABB00B04C34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEEA0241675FABB00B04C34 /* Foundation.framework */; };
 		5CEEA0271675FABB00B04C34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEEA0261675FABB00B04C34 /* CoreGraphics.framework */; };
@@ -24,21 +27,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0189C5167A19C000ED2117 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		5C0189C6167A19C000ED2117 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		5C0189C7167A19C000ED2117 /* CustomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomViewController.xib; sourceTree = "<group>"; };
+		5C0189CF167A1C9F00ED2117 /* bs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bs.png; sourceTree = "<group>"; };
 		5CEEA01E1675FABB00B04C34 /* redkookie-Tab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "redkookie-Tab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEEA0221675FABB00B04C34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5CEEA0241675FABB00B04C34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5CEEA0261675FABB00B04C34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5CEEA02A1675FABB00B04C34 /* redkookie-Tab-Info.plist */ = {isa = PBXFileReference; path = "redkookie-Tab-Info.plist"; sourceTree = "<group>"; };
+		5CEEA02A1675FABB00B04C34 /* redkookie-Tab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "redkookie-Tab-Info.plist"; sourceTree = "<group>"; };
 		5CEEA02C1675FABB00B04C34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5CEEA02E1675FABB00B04C34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5CEEA0301675FABB00B04C34 /* redkookie-Tab-Prefix.pch */ = {isa = PBXFileReference; path = "redkookie-Tab-Prefix.pch"; sourceTree = "<group>"; };
-		5CEEA0311675FABB00B04C34 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CEEA0301675FABB00B04C34 /* redkookie-Tab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redkookie-Tab-Prefix.pch"; sourceTree = "<group>"; };
+		5CEEA0311675FABB00B04C34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CEEA0321675FABB00B04C34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5CEEA0341675FABB00B04C34 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		5CEEA0341675FABB00B04C34 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		5CEEA0351675FABB00B04C34 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		5CEEA0371675FABB00B04C34 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		5CEEA0391675FABB00B04C34 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		5CEEA03B1675FABB00B04C34 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		5CEEA03B1675FABB00B04C34 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		5CEEA03C1675FABB00B04C34 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5CEEA03E1675FABB00B04C34 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		5CEEA0401675FABB00B04C34 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 		5CEEA0281675FABB00B04C34 /* redkookie-Tab */ = {
 			isa = PBXGroup;
 			children = (
+				5C0189CF167A1C9F00ED2117 /* bs.png */,
 				5CEEA0311675FABB00B04C34 /* AppDelegate.h */,
 				5CEEA0321675FABB00B04C34 /* AppDelegate.m */,
 				5CEEA0341675FABB00B04C34 /* FirstViewController.h */,
@@ -103,6 +111,9 @@
 				5CEEA0421675FABC00B04C34 /* FirstViewController.xib */,
 				5CEEA0451675FABC00B04C34 /* SecondViewController.xib */,
 				5CEEA0291675FABB00B04C34 /* Supporting Files */,
+				5C0189C5167A19C000ED2117 /* CustomViewController.h */,
+				5C0189C6167A19C000ED2117 /* CustomViewController.m */,
+				5C0189C7167A19C000ED2117 /* CustomViewController.xib */,
 			);
 			path = "redkookie-Tab";
 			sourceTree = "<group>";
@@ -176,6 +187,8 @@
 				5CEEA0411675FABB00B04C34 /* second@2x.png in Resources */,
 				5CEEA0441675FABC00B04C34 /* FirstViewController.xib in Resources */,
 				5CEEA0471675FABC00B04C34 /* SecondViewController.xib in Resources */,
+				5C0189C9167A19C000ED2117 /* CustomViewController.xib in Resources */,
+				5C0189D0167A1C9F00ED2117 /* bs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +203,7 @@
 				5CEEA0331675FABB00B04C34 /* AppDelegate.m in Sources */,
 				5CEEA0361675FABB00B04C34 /* FirstViewController.m in Sources */,
 				5CEEA03D1675FABB00B04C34 /* SecondViewController.m in Sources */,
+				5C0189C8167A19C000ED2117 /* CustomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +323,7 @@
 				5CEEA04C1675FABC00B04C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

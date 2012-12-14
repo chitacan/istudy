@@ -12,6 +12,8 @@
 
 #import "SecondViewController.h"
 
+#import "CustomViewController.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -23,8 +25,13 @@
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    UIViewController *viewController3 = [[CustomViewController alloc] initWithNibName:@"CustomViewController" bundle:nil setTitle:@"3"];
+    UIViewController *viewController4 = [[CustomViewController alloc] initWithNibName:@"CustomViewController" bundle:nil setTitle:@"4"];
+    
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, 
+                                             viewController3, viewController4, nil];
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

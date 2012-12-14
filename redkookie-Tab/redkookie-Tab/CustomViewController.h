@@ -10,4 +10,8 @@
 
 @interface CustomViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *TitleLabel;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil setTitle:(NSString *)title;
+
 @end
