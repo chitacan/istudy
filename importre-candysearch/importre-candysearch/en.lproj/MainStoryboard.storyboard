@@ -34,8 +34,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="CandySearch" id="1Oy-bS-mVJ"/>
                     <connections>
+                        <outlet property="candySearchBar" destination="DOf-qy-XJ5" id="jZd-C9-so9"/>
                         <outlet property="searchDisplayController" destination="WZz-3i-IqC" id="poy-yw-gce"/>
-                        <segue destination="gef-HY-n0I" kind="push" id="RZi-yF-QBu"/>
+                        <segue destination="gef-HY-n0I" kind="push" identifier="candyDetail" id="XWj-j4-M7S"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bxs-th-0Ui" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -54,8 +55,8 @@
         <!--View Controller-->
         <scene sceneID="JnI-Nt-YKI">
             <objects>
-                <viewController id="gef-HY-n0I" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="re3-Ti-IzY">
+                <viewController storyboardIdentifier="" id="gef-HY-n0I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="" id="re3-Ti-IzY">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -85,6 +86,9 @@
     <classes>
         <class className="CandyTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CandyTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="candySearchBar" candidateClass="UISearchBar"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

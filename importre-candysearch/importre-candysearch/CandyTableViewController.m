@@ -16,6 +16,8 @@
 @implementation CandyTableViewController
 
 @synthesize candyArray;
+@synthesize filteredCandyArray;
+@synthesize candySearchBar;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -48,6 +50,7 @@
                   [Candy candyOfCategory:@"other" name:@"peanut butter cup"],
                   [Candy candyOfCategory:@"other" name:@"gummi bear"], nil];
     [self.tableView reloadData];
+    filteredCandyArray = [NSMutableArray arrayWithCapacity:[candyArray count]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,6 +71,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    if(tableView == self.searchDisplayController.searchResultsTableView)
+        return [filteredCandyArray count];
     return [candyArray count];
 }
 
@@ -80,7 +85,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    Candy *candy = [candyArray objectAtIndex:indexPath.row];
+    Candy *candy;// = [candyArray objectAtIndex:indexPath.row];
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+        candy = [filteredCandyArray objectAtIndex:indexPath.row];
+    else
+        candy = [candyArray objectAtIndex:indexPath.row];
     cell.textLabel.text = candy.name;
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     
@@ -138,5 +147,57 @@
 //     [self.navigationController pushViewController:detailViewController animated:YES];
 //     */
 //}
+
+#pragma mark Content Filtering
+
+- (void)filterContentForSearchText:(NSString *)searchText scope:(NSString *)scope {
+    [self.filteredCandyArray removeAllObjects];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.name contains[c] %@",searchText];
+    filteredCandyArray = [NSMutableArray arrayWithArray:[candyArray filteredArrayUsingPredicate:predicate]];
+}
+
+#pragma mark - UISearchDisplayController Delegate Methods
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    // Tells the table data source to reload when text changes
+    [self filterContentForSearchText:searchString scope:
+     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
+    // Tells the table data source to reload when scope bar selection changes
+    [self filterContentForSearchText:self.searchDisplayController.searchBar.text scope:
+     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+#pragma mark - TableView Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Perform segue to candy detail
+    [self performSegueWithIdentifier:@"candyDetail" sender:tableView];
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"candyDetail"]) {
+        UIViewController *candyDetailViewController = [segue destinationViewController];
+        // In order to manipulate the destination view controller, another check on which table (search or normal) is displayed is needed
+        if (sender == self.searchDisplayController.searchResultsTableView) {
+            NSIndexPath *indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            NSString *destinationTitle = [[filteredCandyArray objectAtIndex:[indexPath row]] name];
+            [candyDetailViewController setTitle:destinationTitle];
+        }
+        else {
+            NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+            NSString *destinationTitle = [[candyArray objectAtIndex:[indexPath row]] name];
+            [candyDetailViewController setTitle:destinationTitle];
+        }
+    }
+}
 
 @end
