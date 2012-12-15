@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="64f-tL-d99">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Candy Table View Controller - CandySearch-->
+        <scene sceneID="hQw-1r-pGf">
+            <objects>
+                <tableViewController id="nlL-NQ-Lft" customClass="CandyTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0U3-Oh-ioV">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="DOf-qy-XJ5">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="nlL-NQ-Lft" id="Zam-c9-GqW"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0K4-fQ-kve">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="CandySearch" id="1Oy-bS-mVJ"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="WZz-3i-IqC" id="poy-yw-gce"/>
+                        <segue destination="gef-HY-n0I" kind="push" id="RZi-yF-QBu"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bxs-th-0Ui" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="WZz-3i-IqC">
+                    <connections>
+                        <outlet property="delegate" destination="nlL-NQ-Lft" id="vEK-4j-cyZ"/>
+                        <outlet property="searchBar" destination="DOf-qy-XJ5" id="JTu-HC-OiI"/>
+                        <outlet property="searchContentsController" destination="nlL-NQ-Lft" id="naP-Wf-dWz"/>
+                        <outlet property="searchResultsDataSource" destination="nlL-NQ-Lft" id="GBf-Vb-gcL"/>
+                        <outlet property="searchResultsDelegate" destination="nlL-NQ-Lft" id="TaC-QW-aSr"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="991" y="101"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JnI-Nt-YKI">
+            <objects>
+                <viewController id="gef-HY-n0I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="re3-Ti-IzY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cmf-iL-qpl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZo-Ig-Gt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="101"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u8p-qh-6eR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="64f-tL-d99" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uc5-SA-6LM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nlL-NQ-Lft" kind="relationship" relationship="rootViewController" id="QPF-NW-EWy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vy8-vu-onN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="101"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CandyTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CandyTableViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
