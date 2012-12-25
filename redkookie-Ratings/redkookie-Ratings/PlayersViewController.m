@@ -31,6 +31,49 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+// Why : The prepareForSegue method is invoked whenever a segue is about to take place. The new view controller has been loaded from the storyboard at this point but it’s not visible yet, and we can use this opportunity to send data to it. (You never call prepareForSegue yourself, it’s a message from UIKit to let you know that a segue has just been triggered.)
+// Remember: Segues only go one way, they are only used to open a new screen. To go back you dismiss the screen (or pop it from the navigation stack), usually from a delegate.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"AddPlayer"])
+	{
+        // the destination of the segue is the Navigation Controller, because that is what we connected to the Bar Button Item.
+        // 바 버튼에서 + 로 바꾼 녀석을 네이게이션 컨트롤러에 새규 로 연결했기 때문.
+		UINavigationController *navigationController = segue.destinationViewController;
+        // 이전과 같은 이유 
+		PlayerDetailsViewController *playerDetailsViewController = 
+        [[navigationController viewControllers] objectAtIndex:0];
+        // 이건 문법을 아직 다 이해하지 못하여 모르겠음...
+		playerDetailsViewController.delegate = self;
+	}
+}
+
+#pragma mark - PlayerDetailsViewControllerDelegate
+
+- (void)playerDetailsViewControllerDidCancel:(PlayerDetailsViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+/*
+- (void)playerDetailsViewControllerDidSave:(PlayerDetailsViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+ */
+
+- (void)playerDetailsViewController:(PlayerDetailsViewController *)controller 
+                       didAddPlayer:(Player *)player
+{
+    // add
+	[_players addObject:player];
+    // Why : We could have just done a [self.tableView reloadData] but it looks nicer to insert the new row with an animation. UITableViewRowAnimationAutomatic is a new constant in iOS 5 that automatically picks the proper animation, depending on where you insert the new row, very handy.
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[_players count] - 1 inSection:0];
+	[self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
+                          withRowAnimation:UITableViewRowAnimationAutomatic];
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -161,6 +204,8 @@
 */
 
 #pragma mark - Table view delegate
+
+// (Note that the table view delegate method didSelectRowAtIndexPath in PlayerDetailsViewController is still called when you tap the Game row, so make sure you don’t do anything there that will conflict with the segue.)
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
