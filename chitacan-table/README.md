@@ -23,6 +23,20 @@ if ([self conformsToProtocol:@protocol(UITableViewDataSource)]) {
 * <> 의 경우 다른 디렉토리의 헤더를 찾는다.
 	* 프레임워크의 헤더를 가져올 경우 사용한다.
 
+## introspection vs reflection
+
+* obj-c를 보다보면 introspection과 관련된 메소드들을 찾을 수 있다.
+	* `respondsToSelector` 또는 `isKindOfClass` 등등
+* 이는 사실 자바에서 자주 사용하는 `reflection` 이란 개념과 매우 헷갈리는데 (런타임에 해당 객체를 검사) 정확하게 살펴보면 다음과 같다.
+
+| introspection | reflection    |
+| ------------- | ------------- |
+| 런타임에 특정 객체를 검사  | 런타임에 특정 객체 검사 & 변경  |
+
+* 즉 reflection은 런타임에 특정 객체의 메소드를 실행하거나 값을 변경할 수도 있는 개념을 말한다.
+	* 실제로 자바의 reflection 을 사용하면 런타임에 객체의 값을 변경할 수 있다.
+	* 하지만 obj-c에서는 introspection의 개념까지 사용가능하다.
+
 ## xib 파일은 다른 소스파일과 어떻게 연결되는가??
 
 ## tableView:commitEditingStyle:forRowAtIndexPath 의 동작방식
