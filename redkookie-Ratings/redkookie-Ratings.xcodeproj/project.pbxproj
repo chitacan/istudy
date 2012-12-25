@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CF2FE371688A6930083D22C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF2FE361688A6930083D22C /* UIKit.framework */; };
+		5CF2FE391688A6930083D22C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF2FE381688A6930083D22C /* Foundation.framework */; };
+		5CF2FE3B1688A6930083D22C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF2FE3A1688A6930083D22C /* CoreGraphics.framework */; };
+		5CF2FE411688A6930083D22C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE3F1688A6930083D22C /* InfoPlist.strings */; };
+		5CF2FE431688A6930083D22C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2FE421688A6930083D22C /* main.m */; };
+		5CF2FE471688A6930083D22C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2FE461688A6930083D22C /* AppDelegate.m */; };
+		5CF2FE4A1688A6930083D22C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE481688A6930083D22C /* MainStoryboard.storyboard */; };
+		5CF2FE4D1688A6930083D22C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2FE4C1688A6930083D22C /* ViewController.m */; };
+		5CF2FE551688B1A70083D22C /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE531688B1A70083D22C /* 1.png */; };
+		5CF2FE561688B1A70083D22C /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE541688B1A70083D22C /* 3.png */; };
+		5CF2FE5C1688B3290083D22C /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2FE5B1688B3290083D22C /* PlayersViewController.m */; };
+		5CF2FE5F1688B3D70083D22C /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2FE5E1688B3D70083D22C /* Player.m */; };
+		5CF2FE621688B8F60083D22C /* Gestures.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE601688B8F60083D22C /* Gestures.png */; };
+		5CF2FE631688B8F60083D22C /* Players.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE611688B8F60083D22C /* Players.png */; };
+		5CF2FE691688BB230083D22C /* 1StarSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE641688BB220083D22C /* 1StarSmall.png */; };
+		5CF2FE6A1688BB230083D22C /* 2StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE651688BB220083D22C /* 2StarsSmall.png */; };
+		5CF2FE6B1688BB230083D22C /* 3StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE661688BB230083D22C /* 3StarsSmall.png */; };
+		5CF2FE6C1688BB230083D22C /* 4StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE671688BB230083D22C /* 4StarsSmall.png */; };
+		5CF2FE6D1688BB230083D22C /* 5StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2FE681688BB230083D22C /* 5StarsSmall.png */; };
+		5CF2FE701688C0270083D22C /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2FE6F1688C0270083D22C /* PlayerCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5CF2FE321688A6930083D22C /* redkookie-Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "redkookie-Ratings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF2FE361688A6930083D22C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5CF2FE381688A6930083D22C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5CF2FE3A1688A6930083D22C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5CF2FE3E1688A6930083D22C /* redkookie-Ratings-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "redkookie-Ratings-Info.plist"; sourceTree = "<group>"; };
+		5CF2FE401688A6930083D22C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5CF2FE421688A6930083D22C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CF2FE441688A6930083D22C /* redkookie-Ratings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redkookie-Ratings-Prefix.pch"; sourceTree = "<group>"; };
+		5CF2FE451688A6930083D22C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CF2FE461688A6930083D22C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5CF2FE491688A6930083D22C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5CF2FE4B1688A6930083D22C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5CF2FE4C1688A6930083D22C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5CF2FE531688B1A70083D22C /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		5CF2FE541688B1A70083D22C /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		5CF2FE5A1688B3290083D22C /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
+		5CF2FE5B1688B3290083D22C /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
+		5CF2FE5D1688B3D70083D22C /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		5CF2FE5E1688B3D70083D22C /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		5CF2FE601688B8F60083D22C /* Gestures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gestures.png; sourceTree = "<group>"; };
+		5CF2FE611688B8F60083D22C /* Players.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Players.png; sourceTree = "<group>"; };
+		5CF2FE641688BB220083D22C /* 1StarSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1StarSmall.png; sourceTree = "<group>"; };
+		5CF2FE651688BB220083D22C /* 2StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2StarsSmall.png; sourceTree = "<group>"; };
+		5CF2FE661688BB230083D22C /* 3StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3StarsSmall.png; sourceTree = "<group>"; };
+		5CF2FE671688BB230083D22C /* 4StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4StarsSmall.png; sourceTree = "<group>"; };
+		5CF2FE681688BB230083D22C /* 5StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5StarsSmall.png; sourceTree = "<group>"; };
+		5CF2FE6E1688C0270083D22C /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		5CF2FE6F1688C0270083D22C /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CF2FE2F1688A6930083D22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF2FE371688A6930083D22C /* UIKit.framework in Frameworks */,
+				5CF2FE391688A6930083D22C /* Foundation.framework in Frameworks */,
+				5CF2FE3B1688A6930083D22C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CF2FE271688A6930083D22C = {
+			isa = PBXGroup;
+			children = (
+				5CF2FE3C1688A6930083D22C /* redkookie-Ratings */,
+				5CF2FE351688A6930083D22C /* Frameworks */,
+				5CF2FE331688A6930083D22C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CF2FE331688A6930083D22C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CF2FE321688A6930083D22C /* redkookie-Ratings.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CF2FE351688A6930083D22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CF2FE361688A6930083D22C /* UIKit.framework */,
+				5CF2FE381688A6930083D22C /* Foundation.framework */,
+				5CF2FE3A1688A6930083D22C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CF2FE3C1688A6930083D22C /* redkookie-Ratings */ = {
+			isa = PBXGroup;
+			children = (
+				5CF2FE451688A6930083D22C /* AppDelegate.h */,
+				5CF2FE461688A6930083D22C /* AppDelegate.m */,
+				5CF2FE481688A6930083D22C /* MainStoryboard.storyboard */,
+				5CF2FE4B1688A6930083D22C /* ViewController.h */,
+				5CF2FE4C1688A6930083D22C /* ViewController.m */,
+				5CF2FE531688B1A70083D22C /* 1.png */,
+				5CF2FE541688B1A70083D22C /* 3.png */,
+				5CF2FE601688B8F60083D22C /* Gestures.png */,
+				5CF2FE611688B8F60083D22C /* Players.png */,
+				5CF2FE641688BB220083D22C /* 1StarSmall.png */,
+				5CF2FE651688BB220083D22C /* 2StarsSmall.png */,
+				5CF2FE661688BB230083D22C /* 3StarsSmall.png */,
+				5CF2FE671688BB230083D22C /* 4StarsSmall.png */,
+				5CF2FE681688BB230083D22C /* 5StarsSmall.png */,
+				5CF2FE3D1688A6930083D22C /* Supporting Files */,
+				5CF2FE5A1688B3290083D22C /* PlayersViewController.h */,
+				5CF2FE5B1688B3290083D22C /* PlayersViewController.m */,
+				5CF2FE5D1688B3D70083D22C /* Player.h */,
+				5CF2FE5E1688B3D70083D22C /* Player.m */,
+				5CF2FE6E1688C0270083D22C /* PlayerCell.h */,
+				5CF2FE6F1688C0270083D22C /* PlayerCell.m */,
+			);
+			path = "redkookie-Ratings";
+			sourceTree = "<group>";
+		};
+		5CF2FE3D1688A6930083D22C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CF2FE3E1688A6930083D22C /* redkookie-Ratings-Info.plist */,
+				5CF2FE3F1688A6930083D22C /* InfoPlist.strings */,
+				5CF2FE421688A6930083D22C /* main.m */,
+				5CF2FE441688A6930083D22C /* redkookie-Ratings-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CF2FE311688A6930083D22C /* redkookie-Ratings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF2FE501688A6930083D22C /* Build configuration list for PBXNativeTarget "redkookie-Ratings" */;
+			buildPhases = (
+				5CF2FE2E1688A6930083D22C /* Sources */,
+				5CF2FE2F1688A6930083D22C /* Frameworks */,
+				5CF2FE301688A6930083D22C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "redkookie-Ratings";
+			productName = "redkookie-Ratings";
+			productReference = 5CF2FE321688A6930083D22C /* redkookie-Ratings.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CF2FE291688A6930083D22C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = AhnLab;
+			};
+			buildConfigurationList = 5CF2FE2C1688A6930083D22C /* Build configuration list for PBXProject "redkookie-Ratings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5CF2FE271688A6930083D22C;
+			productRefGroup = 5CF2FE331688A6930083D22C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CF2FE311688A6930083D22C /* redkookie-Ratings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CF2FE301688A6930083D22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF2FE411688A6930083D22C /* InfoPlist.strings in Resources */,
+				5CF2FE4A1688A6930083D22C /* MainStoryboard.storyboard in Resources */,
+				5CF2FE551688B1A70083D22C /* 1.png in Resources */,
+				5CF2FE561688B1A70083D22C /* 3.png in Resources */,
+				5CF2FE621688B8F60083D22C /* Gestures.png in Resources */,
+				5CF2FE631688B8F60083D22C /* Players.png in Resources */,
+				5CF2FE691688BB230083D22C /* 1StarSmall.png in Resources */,
+				5CF2FE6A1688BB230083D22C /* 2StarsSmall.png in Resources */,
+				5CF2FE6B1688BB230083D22C /* 3StarsSmall.png in Resources */,
+				5CF2FE6C1688BB230083D22C /* 4StarsSmall.png in Resources */,
+				5CF2FE6D1688BB230083D22C /* 5StarsSmall.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CF2FE2E1688A6930083D22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF2FE431688A6930083D22C /* main.m in Sources */,
+				5CF2FE471688A6930083D22C /* AppDelegate.m in Sources */,
+				5CF2FE4D1688A6930083D22C /* ViewController.m in Sources */,
+				5CF2FE5C1688B3290083D22C /* PlayersViewController.m in Sources */,
+				5CF2FE5F1688B3D70083D22C /* Player.m in Sources */,
+				5CF2FE701688C0270083D22C /* PlayerCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5CF2FE3F1688A6930083D22C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CF2FE401688A6930083D22C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5CF2FE481688A6930083D22C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CF2FE491688A6930083D22C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CF2FE4E1688A6930083D22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5CF2FE4F1688A6930083D22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CF2FE511688A6930083D22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redkookie-Ratings/redkookie-Ratings-Prefix.pch";
+				INFOPLIST_FILE = "redkookie-Ratings/redkookie-Ratings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5CF2FE521688A6930083D22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redkookie-Ratings/redkookie-Ratings-Prefix.pch";
+				INFOPLIST_FILE = "redkookie-Ratings/redkookie-Ratings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CF2FE2C1688A6930083D22C /* Build configuration list for PBXProject "redkookie-Ratings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF2FE4E1688A6930083D22C /* Debug */,
+				5CF2FE4F1688A6930083D22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CF2FE501688A6930083D22C /* Build configuration list for PBXNativeTarget "redkookie-Ratings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF2FE511688A6930083D22C /* Debug */,
+				5CF2FE521688A6930083D22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CF2FE291688A6930083D22C /* Project object */;
+}
