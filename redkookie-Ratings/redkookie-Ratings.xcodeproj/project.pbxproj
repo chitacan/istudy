@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C304333168A0890008278B2 /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C304332168A0890008278B2 /* GamePickerViewController.m */; };
+		5C75C3DD1689EBC90072CB28 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C75C3DC1689EBC90072CB28 /* PlayerDetailsViewController.m */; };
 		5CF2FE371688A6930083D22C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF2FE361688A6930083D22C /* UIKit.framework */; };
 		5CF2FE391688A6930083D22C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF2FE381688A6930083D22C /* Foundation.framework */; };
 		5CF2FE3B1688A6930083D22C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF2FE3A1688A6930083D22C /* CoreGraphics.framework */; };
@@ -30,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C304331168A0890008278B2 /* GamePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
+		5C304332168A0890008278B2 /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
+		5C75C3DB1689EBC90072CB28 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		5C75C3DC1689EBC90072CB28 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 		5CF2FE321688A6930083D22C /* redkookie-Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "redkookie-Ratings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF2FE361688A6930083D22C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5CF2FE381688A6930083D22C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +131,10 @@
 				5CF2FE5E1688B3D70083D22C /* Player.m */,
 				5CF2FE6E1688C0270083D22C /* PlayerCell.h */,
 				5CF2FE6F1688C0270083D22C /* PlayerCell.m */,
+				5C75C3DB1689EBC90072CB28 /* PlayerDetailsViewController.h */,
+				5C75C3DC1689EBC90072CB28 /* PlayerDetailsViewController.m */,
+				5C304331168A0890008278B2 /* GamePickerViewController.h */,
+				5C304332168A0890008278B2 /* GamePickerViewController.m */,
 			);
 			path = "redkookie-Ratings";
 			sourceTree = "<group>";
@@ -218,6 +228,8 @@
 				5CF2FE5C1688B3290083D22C /* PlayersViewController.m in Sources */,
 				5CF2FE5F1688B3D70083D22C /* Player.m in Sources */,
 				5CF2FE701688C0270083D22C /* PlayerCell.m in Sources */,
+				5C75C3DD1689EBC90072CB28 /* PlayerDetailsViewController.m in Sources */,
+				5C304333168A0890008278B2 /* GamePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +341,7 @@
 				5CF2FE521688A6930083D22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
