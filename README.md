@@ -31,7 +31,7 @@ transition | [`transitioning between views`](http://www.icodeblog.com/2008/08/03
 Subjects | Links
 ----- | -----
 auto layout | [`part 1`](http://www.raywenderlich.com/20881/beginning-auto-layout-part-1-of-2), [`part 2`](http://www.raywenderlich.com/20897/beginning-auto-layout-part-2-of-2)
-story board | [`tabbar controller and webview`](http://www.appcoda.com/storyboard-tutorial-create-tab-bar-controller-and-web-view/), [`navigation controller and table view`](http://www.appcoda.com/use-storyboards-to-build-navigation-controller-and-table-view/), [`beggining storyboard part 1`](http://www.raywenderlich.com/5138/beginning-storyboards-in-ios-5-part-1), [`beggining storyboard part 2`](http://www.raywenderlich.com/5138/beginning-storyboards-in-ios-5-part-2)
+story board | [`tabbar controller and webview`](http://www.appcoda.com/storyboard-tutorial-create-tab-bar-controller-and-web-view/), [`navigation controller and table view`](http://www.appcoda.com/use-storyboards-to-build-navigation-controller-and-table-view/), [`beggining storyboard part 1`](http://www.raywenderlich.com/5138/beginning-storyboards-in-ios-5-part-1), [`beggining storyboard part 2`](http://www.raywenderlich.com/5191/beginning-storyboards-in-ios-5-part-2)
 ARC | [`part 1`](http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-1), [`part 2`](http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-2)
 
 ### 4주차
