@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Player.h"
 #import "GamePickerViewController.h"
+#import "RatingDetailViewController.h"
 
 @class PlayerDetailsViewController;
 
@@ -20,12 +21,13 @@
                        didAddPlayer:(Player *)player;
 @end
 
-@interface PlayerDetailsViewController : UITableViewController <GamePickerViewControllerDelegate>
+@interface PlayerDetailsViewController : UITableViewController <GamePickerViewControllerDelegate, RatingDetailViewControllerDelegate>
 
 // 프로퍼티로 위에 선언한 델리게이트 객체 선언 , weak ???
 @property (nonatomic, weak) id <PlayerDetailsViewControllerDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet UILabel *detailLabel;
+@property (strong, nonatomic) IBOutlet UILabel *ratingLabel;
 
 // 켄슬과 돈 에 대한 메소드 선언 
 - (IBAction)cancel:(id)sender;

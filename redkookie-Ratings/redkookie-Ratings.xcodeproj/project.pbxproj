@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		5C304333168A0890008278B2 /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C304332168A0890008278B2 /* GamePickerViewController.m */; };
 		5C75C3DD1689EBC90072CB28 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C75C3DC1689EBC90072CB28 /* PlayerDetailsViewController.m */; };
+		5CB99E65168BBF7D00BA14FD /* 1Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB99E60168BBF7C00BA14FD /* 1Star.png */; };
+		5CB99E66168BBF7D00BA14FD /* 2Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB99E61168BBF7D00BA14FD /* 2Stars.png */; };
+		5CB99E67168BBF7D00BA14FD /* 3Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB99E62168BBF7D00BA14FD /* 3Stars.png */; };
+		5CB99E68168BBF7D00BA14FD /* 4Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB99E63168BBF7D00BA14FD /* 4Stars.png */; };
+		5CB99E69168BBF7D00BA14FD /* 5Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB99E64168BBF7D00BA14FD /* 5Stars.png */; };
+		5CB99E6C168BBFA000BA14FD /* RatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB99E6B168BBFA000BA14FD /* RatingCell.m */; };
+		5CB99E6F168BC09C00BA14FD /* RatingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB99E6E168BC09C00BA14FD /* RatingDetailViewController.m */; };
 		5CF2FE371688A6930083D22C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF2FE361688A6930083D22C /* UIKit.framework */; };
 		5CF2FE391688A6930083D22C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF2FE381688A6930083D22C /* Foundation.framework */; };
 		5CF2FE3B1688A6930083D22C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF2FE3A1688A6930083D22C /* CoreGraphics.framework */; };
@@ -36,6 +43,15 @@
 		5C304332168A0890008278B2 /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
 		5C75C3DB1689EBC90072CB28 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
 		5C75C3DC1689EBC90072CB28 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
+		5CB99E60168BBF7C00BA14FD /* 1Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1Star.png; sourceTree = "<group>"; };
+		5CB99E61168BBF7D00BA14FD /* 2Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2Stars.png; sourceTree = "<group>"; };
+		5CB99E62168BBF7D00BA14FD /* 3Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3Stars.png; sourceTree = "<group>"; };
+		5CB99E63168BBF7D00BA14FD /* 4Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4Stars.png; sourceTree = "<group>"; };
+		5CB99E64168BBF7D00BA14FD /* 5Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5Stars.png; sourceTree = "<group>"; };
+		5CB99E6A168BBFA000BA14FD /* RatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingCell.h; sourceTree = "<group>"; };
+		5CB99E6B168BBFA000BA14FD /* RatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingCell.m; sourceTree = "<group>"; };
+		5CB99E6D168BC09C00BA14FD /* RatingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingDetailViewController.h; sourceTree = "<group>"; };
+		5CB99E6E168BC09C00BA14FD /* RatingDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingDetailViewController.m; sourceTree = "<group>"; };
 		5CF2FE321688A6930083D22C /* redkookie-Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "redkookie-Ratings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF2FE361688A6930083D22C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5CF2FE381688A6930083D22C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +140,11 @@
 				5CF2FE661688BB230083D22C /* 3StarsSmall.png */,
 				5CF2FE671688BB230083D22C /* 4StarsSmall.png */,
 				5CF2FE681688BB230083D22C /* 5StarsSmall.png */,
+				5CB99E60168BBF7C00BA14FD /* 1Star.png */,
+				5CB99E61168BBF7D00BA14FD /* 2Stars.png */,
+				5CB99E62168BBF7D00BA14FD /* 3Stars.png */,
+				5CB99E63168BBF7D00BA14FD /* 4Stars.png */,
+				5CB99E64168BBF7D00BA14FD /* 5Stars.png */,
 				5CF2FE3D1688A6930083D22C /* Supporting Files */,
 				5CF2FE5A1688B3290083D22C /* PlayersViewController.h */,
 				5CF2FE5B1688B3290083D22C /* PlayersViewController.m */,
@@ -135,6 +156,10 @@
 				5C75C3DC1689EBC90072CB28 /* PlayerDetailsViewController.m */,
 				5C304331168A0890008278B2 /* GamePickerViewController.h */,
 				5C304332168A0890008278B2 /* GamePickerViewController.m */,
+				5CB99E6A168BBFA000BA14FD /* RatingCell.h */,
+				5CB99E6B168BBFA000BA14FD /* RatingCell.m */,
+				5CB99E6D168BC09C00BA14FD /* RatingDetailViewController.h */,
+				5CB99E6E168BC09C00BA14FD /* RatingDetailViewController.m */,
 			);
 			path = "redkookie-Ratings";
 			sourceTree = "<group>";
@@ -212,6 +237,11 @@
 				5CF2FE6B1688BB230083D22C /* 3StarsSmall.png in Resources */,
 				5CF2FE6C1688BB230083D22C /* 4StarsSmall.png in Resources */,
 				5CF2FE6D1688BB230083D22C /* 5StarsSmall.png in Resources */,
+				5CB99E65168BBF7D00BA14FD /* 1Star.png in Resources */,
+				5CB99E66168BBF7D00BA14FD /* 2Stars.png in Resources */,
+				5CB99E67168BBF7D00BA14FD /* 3Stars.png in Resources */,
+				5CB99E68168BBF7D00BA14FD /* 4Stars.png in Resources */,
+				5CB99E69168BBF7D00BA14FD /* 5Stars.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +260,8 @@
 				5CF2FE701688C0270083D22C /* PlayerCell.m in Sources */,
 				5C75C3DD1689EBC90072CB28 /* PlayerDetailsViewController.m in Sources */,
 				5C304333168A0890008278B2 /* GamePickerViewController.m in Sources */,
+				5CB99E6C168BBFA000BA14FD /* RatingCell.m in Sources */,
+				5CB99E6F168BC09C00BA14FD /* RatingDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +293,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kookie Red (UWQHC27W8U)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -276,6 +309,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -286,7 +321,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kookie Red (UWQHC27W8U)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -295,6 +331,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -303,10 +341,14 @@
 		5CF2FE511688A6930083D22C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kookie Red (UWQHC27W8U)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "redkookie-Ratings/redkookie-Ratings-Prefix.pch";
 				INFOPLIST_FILE = "redkookie-Ratings/redkookie-Ratings-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -314,10 +356,14 @@
 		5CF2FE521688A6930083D22C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kookie Red (UWQHC27W8U)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "redkookie-Ratings/redkookie-Ratings-Prefix.pch";
 				INFOPLIST_FILE = "redkookie-Ratings/redkookie-Ratings-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

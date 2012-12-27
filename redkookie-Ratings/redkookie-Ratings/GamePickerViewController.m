@@ -143,8 +143,6 @@
 		cell.accessoryType = UITableViewCellAccessoryNone;
     }
 	return cell;
-    
-    return cell;
 }
 
 /*
@@ -211,7 +209,7 @@
     // 게임의 텍스트도 가져옴
 	NSString *theGame = [games objectAtIndex:indexPath.row];
     // 그 텍스트를 델리게이트를 통해서 전달 
-	[self.delegate gamePickerViewController:self didSelectGame:theGame];
+	[_delegate gamePickerViewController:self didSelectGame:theGame];
 }
 
 @end

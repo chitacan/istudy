@@ -13,11 +13,13 @@
 @implementation PlayerDetailsViewController
 {
 	NSString *game;
+    NSInteger ratings;
 }
 
 @synthesize delegate = _delegate;
 @synthesize nameTextField = _nameTextField;
 @synthesize detailLabel = _detailLabel;
+@synthesize ratingLabel = _ratingLabel;
 
 // 최초에 호출 됨 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -25,6 +27,7 @@
 	if ((self = [super initWithCoder:aDecoder]))
 	{
 		game = @"Chess";
+        ratings = 1;
 	}
 	return self;
 }
@@ -54,6 +57,13 @@
 		gamePickerViewController.delegate = self;
 		gamePickerViewController.game = game;
 	}
+    
+    if ([segue.identifier isEqualToString:@"SetRating"])
+	{
+		RatingDetailViewController *ratingDetailViewController = segue.destinationViewController;
+		ratingDetailViewController.delegate = self;
+        ratingDetailViewController.rating = ratings - 1;
+	}
 }
 
 #pragma mark - View lifecycle
@@ -69,12 +79,14 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     _detailLabel.text = game;
+    _ratingLabel.text = [NSString stringWithFormat:@"%d", ratings];
 }
 
 - (void)viewDidUnload
 {
     [self setNameTextField:nil];
     [self setDetailLabel:nil];
+    _ratingLabel = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -90,7 +102,7 @@
     Player *player = [[Player alloc] init];
 	player.name = _nameTextField.text;
 	player.game = game;
-	player.rating = 1;
+	player.rating = ratings;
 	[_delegate playerDetailsViewController:self didAddPlayer:player];
 }
 
@@ -101,6 +113,13 @@
 	game = theGame;
 	_detailLabel.text = game;
 	[self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)ratingDetailViewController:(RatingDetailViewController *)controller didSelectRating:(NSInteger)rating
+{
+    ratings = rating + 1;
+    _ratingLabel.text = [NSString stringWithFormat:@"%d", ratings];
+	[self.navigationController popViewControllerAnimated:YES];    
 }
 
 - (void)viewWillAppear:(BOOL)animated
