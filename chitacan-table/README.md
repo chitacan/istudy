@@ -37,7 +37,26 @@ if ([self conformsToProtocol:@protocol(UITableViewDataSource)]) {
 	* 실제로 자바의 reflection 을 사용하면 런타임에 객체의 값을 변경할 수 있다.
 	* 하지만 obj-c에서는 introspection의 개념까지 사용가능하다.
 
-## xib 파일은 다른 소스파일과 어떻게 연결되는가??
+## xib 파일은 다른 소스파일(*.m)과 어떻게 연결되는가??
+
+### xib???
+
+* nib file (NeXT Interface Builder file)의 `xml` 버전. 기존에 nib는 바이너리 형태의 포맷이었다.
+* 버전관리를 위해 `xml` 형태의 xib를 사용하지만, *.app을 만드는 과정에서 다시 nib 포맷으로 변환된다.(이는 실제 *.app 을 까보면 알 수 있다.)
+
+### nib
+
+[Digging into nib files…](http://softwarenerd.org/archives/284), [nib 파일 둘러보기](http://www.cocoadev.co.kr/175)
+
+* 인터페이스 빌더를 통해 생성된 레이아웃, 속성, 오브젝트 바인딩 정보들이 `freeze-dried` 된 파일 (자바의 serialize와 비슷한듯)
+* 실제 데이터와 코드로 이루어져 있기때문에 (물론 디코딩이 필요함) 메모리에 한번에 올려서 실행이 가능하다.
+
+### file's owner
+
+한가지 궁금한게 왜 file's owner에 클래스를 명시해 줘야 되지?? (viewcontroller.xib의 file's owner와 viewcontroller의 연결을 끊어도 앱은 잘 동작함)
+
+* file's owner는 xib의 를 가진 클래스
+* 당장에 드는 생각은 xib를 코드 레벨에서 확장하기 위한 방법?? 마치 안드로이드 레이아웃의 `<com.example.name.view/>` 처럼
 
 ## tableView:commitEditingStyle:forRowAtIndexPath 의 동작방식
 
