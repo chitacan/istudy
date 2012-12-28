@@ -22,17 +22,18 @@ table view | [`uitableview with nsarray`](http://www.icodeblog.com/2008/08/08/ip
 
 Subjects | Links
 ----- | -----
-scroll view | [`how to user scrollview to scroll and zoom`](http://www.raywenderlich.com/10518/how-to-use-uiscrollview-to-scroll-and-zoom-content)
-create simple app | [`part 1`](http://www.raywenderlich.com/1797/how-to-create-a-simple-iphone-app-tutorial-part-1), [`part 2`](http://www.raywenderlich.com/1845/how-to-create-a-simple-iphone-app-tutorial-part-2), [`part 3`](http://www.raywenderlich.com/1845/how-to-create-a-simple-iphone-app-tutorial-part-3)
-transition | [`transitioning between views`](http://www.icodeblog.com/2008/08/03/iphone-programming-tutorial-transitioning-between-views/)
+auto layout | [`part 1`](http://www.raywenderlich.com/20881/beginning-auto-layout-part-1-of-2), [`part 2`](http://www.raywenderlich.com/20897/beginning-auto-layout-part-2-of-2)
+story board | [`tabbar controller and webview`](http://www.appcoda.com/storyboard-tutorial-create-tab-bar-controller-and-web-view/), [`navigation controller and table view`](http://www.appcoda.com/use-storyboards-to-build-navigation-controller-and-table-view/), [`beggining storyboard part 1`](http://www.raywenderlich.com/5138/beginning-storyboards-in-ios-5-part-1), [`beggining storyboard part 2`](http://www.raywenderlich.com/5191/beginning-storyboards-in-ios-5-part-2)
+ARC | [`part 1`](http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-1), [`part 2`](http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-2)
 
 ### 3주차
 
 Subjects | Links
 ----- | -----
-auto layout | [`part 1`](http://www.raywenderlich.com/20881/beginning-auto-layout-part-1-of-2), [`part 2`](http://www.raywenderlich.com/20897/beginning-auto-layout-part-2-of-2)
-story board | [`tabbar controller and webview`](http://www.appcoda.com/storyboard-tutorial-create-tab-bar-controller-and-web-view/), [`navigation controller and table view`](http://www.appcoda.com/use-storyboards-to-build-navigation-controller-and-table-view/), [`beggining storyboard part 1`](http://www.raywenderlich.com/5138/beginning-storyboards-in-ios-5-part-1), [`beggining storyboard part 2`](http://www.raywenderlich.com/5191/beginning-storyboards-in-ios-5-part-2)
-ARC | [`part 1`](http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-1), [`part 2`](http://www.raywenderlich.com/5677/beginning-arc-in-ios-5-part-2)
+scroll view | [`how to user scrollview to scroll and zoom`](http://www.raywenderlich.com/10518/how-to-use-uiscrollview-to-scroll-and-zoom-content)
+create simple app | [`part 1`](http://www.raywenderlich.com/1797/how-to-create-a-simple-iphone-app-tutorial-part-1), [`part 2`](http://www.raywenderlich.com/1845/how-to-create-a-simple-iphone-app-tutorial-part-2), [`part 3`](http://www.raywenderlich.com/1845/how-to-create-a-simple-iphone-app-tutorial-part-3)
+transition | [`transitioning between views`](http://www.icodeblog.com/2008/08/03/iphone-programming-tutorial-transitioning-between-views/)
+
 
 ### 4주차
 
