@@ -42,6 +42,8 @@
 		E1F27DE6168F4E8E008FB036 /* Gestures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F27DCE168F4E8E008FB036 /* Gestures@2x.png */; };
 		E1F27DE7168F4E8E008FB036 /* Players.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F27DCF168F4E8E008FB036 /* Players.png */; };
 		E1F27DE8168F4E8E008FB036 /* Players@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F27DD0168F4E8E008FB036 /* Players@2x.png */; };
+		E1F27DEC168F5196008FB036 /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F27DEB168F5196008FB036 /* PlayersViewController.m */; };
+		E1F27DEF168F5264008FB036 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F27DEE168F5264008FB036 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,10 @@
 		E1F27DCE168F4E8E008FB036 /* Gestures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gestures@2x.png"; sourceTree = "<group>"; };
 		E1F27DCF168F4E8E008FB036 /* Players.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Players.png; sourceTree = "<group>"; };
 		E1F27DD0168F4E8E008FB036 /* Players@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players@2x.png"; sourceTree = "<group>"; };
+		E1F27DEA168F5196008FB036 /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
+		E1F27DEB168F5196008FB036 /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
+		E1F27DED168F5264008FB036 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		E1F27DEE168F5264008FB036 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,10 @@
 		E1147A6D168F492000A65531 /* importre-ratings */ = {
 			isa = PBXGroup;
 			children = (
+				E1F27DEA168F5196008FB036 /* PlayersViewController.h */,
+				E1F27DEB168F5196008FB036 /* PlayersViewController.m */,
+				E1F27DED168F5264008FB036 /* Player.h */,
+				E1F27DEE168F5264008FB036 /* Player.m */,
 				E1147A76168F492000A65531 /* AppDelegate.h */,
 				E1147A77168F492000A65531 /* AppDelegate.m */,
 				E1147A7F168F492000A65531 /* MainStoryboard.storyboard */,
@@ -280,6 +290,8 @@
 				E1147A74168F492000A65531 /* main.m in Sources */,
 				E1147A78168F492000A65531 /* AppDelegate.m in Sources */,
 				E1147A84168F492000A65531 /* ViewController.m in Sources */,
+				E1F27DEC168F5196008FB036 /* PlayersViewController.m in Sources */,
+				E1F27DEF168F5264008FB036 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
