@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D66EEE6168F610400A760BE /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D66EEE5168F610400A760BE /* PlayerCell.m */; };
 		E1147A68168F492000A65531 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1147A67168F492000A65531 /* UIKit.framework */; };
 		E1147A6A168F492000A65531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1147A69168F492000A65531 /* Foundation.framework */; };
 		E1147A6C168F492000A65531 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1147A6B168F492000A65531 /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D66EEE4168F610400A760BE /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		2D66EEE5168F610400A760BE /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
 		E1147A63168F492000A65531 /* importre-ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "importre-ratings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1147A67168F492000A65531 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E1147A69168F492000A65531 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 		E1147A6D168F492000A65531 /* importre-ratings */ = {
 			isa = PBXGroup;
 			children = (
+				2D66EEE4168F610400A760BE /* PlayerCell.h */,
+				2D66EEE5168F610400A760BE /* PlayerCell.m */,
 				E1F27DEA168F5196008FB036 /* PlayersViewController.h */,
 				E1F27DEB168F5196008FB036 /* PlayersViewController.m */,
 				E1F27DED168F5264008FB036 /* Player.h */,
@@ -292,6 +297,7 @@
 				E1147A84168F492000A65531 /* ViewController.m in Sources */,
 				E1F27DEC168F5196008FB036 /* PlayersViewController.m in Sources */,
 				E1F27DEF168F5264008FB036 /* Player.m in Sources */,
+				2D66EEE6168F610400A760BE /* PlayerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
