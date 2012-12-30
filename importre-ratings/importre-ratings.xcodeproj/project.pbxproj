@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D66EEE6168F610400A760BE /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D66EEE5168F610400A760BE /* PlayerCell.m */; };
+		2DB1A2F516900412004B27EB /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB1A2F416900412004B27EB /* PlayerDetailsViewController.m */; };
 		E1147A68168F492000A65531 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1147A67168F492000A65531 /* UIKit.framework */; };
 		E1147A6A168F492000A65531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1147A69168F492000A65531 /* Foundation.framework */; };
 		E1147A6C168F492000A65531 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1147A6B168F492000A65531 /* CoreGraphics.framework */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		2D66EEE4168F610400A760BE /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
 		2D66EEE5168F610400A760BE /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
+		2DB1A2F316900412004B27EB /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		2DB1A2F416900412004B27EB /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 		E1147A63168F492000A65531 /* importre-ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "importre-ratings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1147A67168F492000A65531 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E1147A69168F492000A65531 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -153,6 +156,8 @@
 				E1147A82168F492000A65531 /* ViewController.h */,
 				E1147A83168F492000A65531 /* ViewController.m */,
 				E1147A6E168F492000A65531 /* Supporting Files */,
+				2DB1A2F316900412004B27EB /* PlayerDetailsViewController.h */,
+				2DB1A2F416900412004B27EB /* PlayerDetailsViewController.m */,
 			);
 			path = "importre-ratings";
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				E1F27DEC168F5196008FB036 /* PlayersViewController.m in Sources */,
 				E1F27DEF168F5264008FB036 /* Player.m in Sources */,
 				2D66EEE6168F610400A760BE /* PlayerCell.m in Sources */,
+				2DB1A2F516900412004B27EB /* PlayerDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
