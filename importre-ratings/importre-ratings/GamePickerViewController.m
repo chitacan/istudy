@@ -1,22 +1,20 @@
 //
-//  PlayersViewController.m
+//  GamePickerViewController.m
 //  importre-ratings
 //
 //  Created by importre on 12. 12. 30..
 //  Copyright (c) 2012년 AhnLab. All rights reserved.
 //
 
-#import "PlayersViewController.h"
-#import "Player.h"
-#import "PlayerCell.h"
+#import "GamePickerViewController.h"
 
-@interface PlayersViewController ()
+@interface GamePickerViewController ()
 
 @end
 
-@implementation PlayersViewController
+@implementation GamePickerViewController
 
-@synthesize players;
+@synthesize games;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -36,6 +34,16 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.games = [NSArray arrayWithObjects:
+                  @"Angry Birds",
+                  @"Chess",
+                  @"Russian Roulette",
+                  @"Spin the Bottle",
+                  @"Texas Hold'em Pocker",
+                  @"Tic-Tac-Toe",
+                  nil];
+    self.selectedIndex = [self.games indexOfObject:self.game];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,30 +63,20 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.players.count;
+    return [self.games count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PlayerCell *cell = (PlayerCell *)[tableView dequeueReusableCellWithIdentifier:@"PlayerCell"];
-    Player *player = [self.players objectAtIndex:indexPath.row];
-    cell.nameLabel.text = player.name;
-	cell.gameLabel.text = player.game;
-	cell.ratingImageView.image = [self imageForRating:player.rating];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GameCell"];
+    cell.textLabel.text = [self.games objectAtIndex:indexPath.row];
+    
+    if (indexPath.row == self.selectedIndex)
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    else
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    
     return cell;
-}
-
-- (UIImage *)imageForRating:(int)rating
-{
-	switch (rating)
-	{
-		case 1: return [UIImage imageNamed:@"1StarSmall.png"];
-		case 2: return [UIImage imageNamed:@"2StarsSmall.png"];
-		case 3: return [UIImage imageNamed:@"3StarsSmall.png"];
-		case 4: return [UIImage imageNamed:@"4StarsSmall.png"];
-		case 5: return [UIImage imageNamed:@"5StarsSmall.png"];
-	}
-	return nil;
 }
 
 /*
@@ -90,15 +88,19 @@
 }
 */
 
+/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete)
-	{
-		[self.players removeObjectAtIndex:indexPath.row];
-		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-	}
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }   
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }   
 }
+*/
 
 /*
 // Override to support rearranging the table view.
@@ -127,31 +129,18 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-}
-
-
-
-#pragma mark - PlayerDetailsViewControllerDelegate
-
-- (void)playerDetailsViewControllerDidCancel:(PlayerDetailsViewController *)controller {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)playerDetailsViewController:(PlayerDetailsViewController *)controller
-                       didAddPlayer:(id)player {
-    NSLog(@"asdf");
-    [self.players addObject:player];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[self.players count] - 1 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.identifier isEqualToString:@"AddPlayer"]) {
-        UINavigationController *naviController = segue.destinationViewController;
-        PlayerDetailsViewController *playerDetailsViewController = [[naviController viewControllers] objectAtIndex:0];
-        playerDetailsViewController.delegate = self;
-    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+	if (self.selectedIndex != NSNotFound) {
+		UITableViewCell *cell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.selectedIndex inSection:0]];
+		cell.accessoryType = UITableViewCellAccessoryNone;
+	}
+    
+	self.selectedIndex = indexPath.row;
+	UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+	cell.accessoryType = UITableViewCellAccessoryCheckmark;
+	NSString *theGame = [games objectAtIndex:indexPath.row];
+	[self.delegate gamePickerViewController:self didSelectGame:theGame];
 }
 
 @end
