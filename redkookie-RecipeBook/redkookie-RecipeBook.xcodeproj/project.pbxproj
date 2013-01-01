@@ -19,6 +19,7 @@
 		5C5B83F7169310230017C2F7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B83F5169310230017C2F7 /* MainStoryboard_iPhone.storyboard */; };
 		5C5B83FA169310230017C2F7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B83F8169310230017C2F7 /* MainStoryboard_iPad.storyboard */; };
 		5C5B83FD169310230017C2F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B83FC169310230017C2F7 /* ViewController.m */; };
+		5C5B8405169319CB0017C2F7 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B8404169319CB0017C2F7 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		5C5B83F9169310230017C2F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		5C5B83FB169310230017C2F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5C5B83FC169310230017C2F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C5B8403169319CB0017C2F7 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		5C5B8404169319CB0017C2F7 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				5C5B83FB169310230017C2F7 /* ViewController.h */,
 				5C5B83FC169310230017C2F7 /* ViewController.m */,
 				5C5B83E4169310230017C2F7 /* Supporting Files */,
+				5C5B8403169319CB0017C2F7 /* AboutViewController.h */,
+				5C5B8404169319CB0017C2F7 /* AboutViewController.m */,
 			);
 			path = "redkookie-RecipeBook";
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				5C5B83EA169310230017C2F7 /* main.m in Sources */,
 				5C5B83EE169310230017C2F7 /* AppDelegate.m in Sources */,
 				5C5B83FD169310230017C2F7 /* ViewController.m in Sources */,
+				5C5B8405169319CB0017C2F7 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
