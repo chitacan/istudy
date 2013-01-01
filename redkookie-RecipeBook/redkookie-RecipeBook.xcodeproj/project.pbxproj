@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C5B83DE169310230017C2F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5B83DD169310230017C2F7 /* UIKit.framework */; };
+		5C5B83E0169310230017C2F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5B83DF169310230017C2F7 /* Foundation.framework */; };
+		5C5B83E2169310230017C2F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5B83E1169310230017C2F7 /* CoreGraphics.framework */; };
+		5C5B83E8169310230017C2F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B83E6169310230017C2F7 /* InfoPlist.strings */; };
+		5C5B83EA169310230017C2F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B83E9169310230017C2F7 /* main.m */; };
+		5C5B83EE169310230017C2F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B83ED169310230017C2F7 /* AppDelegate.m */; };
+		5C5B83F0169310230017C2F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B83EF169310230017C2F7 /* Default.png */; };
+		5C5B83F2169310230017C2F7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B83F1169310230017C2F7 /* Default@2x.png */; };
+		5C5B83F4169310230017C2F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B83F3169310230017C2F7 /* Default-568h@2x.png */; };
+		5C5B83F7169310230017C2F7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B83F5169310230017C2F7 /* MainStoryboard_iPhone.storyboard */; };
+		5C5B83FA169310230017C2F7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B83F8169310230017C2F7 /* MainStoryboard_iPad.storyboard */; };
+		5C5B83FD169310230017C2F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B83FC169310230017C2F7 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C5B83D9169310230017C2F7 /* redkookie-RecipeBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "redkookie-RecipeBook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C5B83DD169310230017C2F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5C5B83DF169310230017C2F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5C5B83E1169310230017C2F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5C5B83E5169310230017C2F7 /* redkookie-RecipeBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "redkookie-RecipeBook-Info.plist"; sourceTree = "<group>"; };
+		5C5B83E7169310230017C2F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C5B83E9169310230017C2F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C5B83EB169310230017C2F7 /* redkookie-RecipeBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redkookie-RecipeBook-Prefix.pch"; sourceTree = "<group>"; };
+		5C5B83EC169310230017C2F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C5B83ED169310230017C2F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C5B83EF169310230017C2F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5C5B83F1169310230017C2F7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5C5B83F3169310230017C2F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5C5B83F6169310230017C2F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		5C5B83F9169310230017C2F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		5C5B83FB169310230017C2F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C5B83FC169310230017C2F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C5B83D6169310230017C2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5B83DE169310230017C2F7 /* UIKit.framework in Frameworks */,
+				5C5B83E0169310230017C2F7 /* Foundation.framework in Frameworks */,
+				5C5B83E2169310230017C2F7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C5B83CE169310230017C2F7 = {
+			isa = PBXGroup;
+			children = (
+				5C5B83E3169310230017C2F7 /* redkookie-RecipeBook */,
+				5C5B83DC169310230017C2F7 /* Frameworks */,
+				5C5B83DA169310230017C2F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C5B83DA169310230017C2F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C5B83D9169310230017C2F7 /* redkookie-RecipeBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C5B83DC169310230017C2F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C5B83DD169310230017C2F7 /* UIKit.framework */,
+				5C5B83DF169310230017C2F7 /* Foundation.framework */,
+				5C5B83E1169310230017C2F7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C5B83E3169310230017C2F7 /* redkookie-RecipeBook */ = {
+			isa = PBXGroup;
+			children = (
+				5C5B83EC169310230017C2F7 /* AppDelegate.h */,
+				5C5B83ED169310230017C2F7 /* AppDelegate.m */,
+				5C5B83F5169310230017C2F7 /* MainStoryboard_iPhone.storyboard */,
+				5C5B83F8169310230017C2F7 /* MainStoryboard_iPad.storyboard */,
+				5C5B83FB169310230017C2F7 /* ViewController.h */,
+				5C5B83FC169310230017C2F7 /* ViewController.m */,
+				5C5B83E4169310230017C2F7 /* Supporting Files */,
+			);
+			path = "redkookie-RecipeBook";
+			sourceTree = "<group>";
+		};
+		5C5B83E4169310230017C2F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C5B83E5169310230017C2F7 /* redkookie-RecipeBook-Info.plist */,
+				5C5B83E6169310230017C2F7 /* InfoPlist.strings */,
+				5C5B83E9169310230017C2F7 /* main.m */,
+				5C5B83EB169310230017C2F7 /* redkookie-RecipeBook-Prefix.pch */,
+				5C5B83EF169310230017C2F7 /* Default.png */,
+				5C5B83F1169310230017C2F7 /* Default@2x.png */,
+				5C5B83F3169310230017C2F7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C5B83D8169310230017C2F7 /* redkookie-RecipeBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C5B8400169310230017C2F7 /* Build configuration list for PBXNativeTarget "redkookie-RecipeBook" */;
+			buildPhases = (
+				5C5B83D5169310230017C2F7 /* Sources */,
+				5C5B83D6169310230017C2F7 /* Frameworks */,
+				5C5B83D7169310230017C2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "redkookie-RecipeBook";
+			productName = "redkookie-RecipeBook";
+			productReference = 5C5B83D9169310230017C2F7 /* redkookie-RecipeBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C5B83D0169310230017C2F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = cloody;
+			};
+			buildConfigurationList = 5C5B83D3169310230017C2F7 /* Build configuration list for PBXProject "redkookie-RecipeBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C5B83CE169310230017C2F7;
+			productRefGroup = 5C5B83DA169310230017C2F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C5B83D8169310230017C2F7 /* redkookie-RecipeBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C5B83D7169310230017C2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5B83E8169310230017C2F7 /* InfoPlist.strings in Resources */,
+				5C5B83F0169310230017C2F7 /* Default.png in Resources */,
+				5C5B83F2169310230017C2F7 /* Default@2x.png in Resources */,
+				5C5B83F4169310230017C2F7 /* Default-568h@2x.png in Resources */,
+				5C5B83F7169310230017C2F7 /* MainStoryboard_iPhone.storyboard in Resources */,
+				5C5B83FA169310230017C2F7 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C5B83D5169310230017C2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5B83EA169310230017C2F7 /* main.m in Sources */,
+				5C5B83EE169310230017C2F7 /* AppDelegate.m in Sources */,
+				5C5B83FD169310230017C2F7 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C5B83E6169310230017C2F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C5B83E7169310230017C2F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5C5B83F5169310230017C2F7 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C5B83F6169310230017C2F7 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5C5B83F8169310230017C2F7 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C5B83F9169310230017C2F7 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C5B83FE169310230017C2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "C0A8FF59-4373-4C1D-836C-ECF9951BE728";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C0A8FF59-4373-4C1D-836C-ECF9951BE728";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C5B83FF169310230017C2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "C0A8FF59-4373-4C1D-836C-ECF9951BE728";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C0A8FF59-4373-4C1D-836C-ECF9951BE728";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C5B8401169310230017C2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redkookie-RecipeBook/redkookie-RecipeBook-Prefix.pch";
+				INFOPLIST_FILE = "redkookie-RecipeBook/redkookie-RecipeBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C0A8FF59-4373-4C1D-836C-ECF9951BE728";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C0A8FF59-4373-4C1D-836C-ECF9951BE728";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5C5B8402169310230017C2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kookie Red (UWQHC27W8U)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redkookie-RecipeBook/redkookie-RecipeBook-Prefix.pch";
+				INFOPLIST_FILE = "redkookie-RecipeBook/redkookie-RecipeBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C0A8FF59-4373-4C1D-836C-ECF9951BE728";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C0A8FF59-4373-4C1D-836C-ECF9951BE728";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C5B83D3169310230017C2F7 /* Build configuration list for PBXProject "redkookie-RecipeBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5B83FE169310230017C2F7 /* Debug */,
+				5C5B83FF169310230017C2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C5B8400169310230017C2F7 /* Build configuration list for PBXNativeTarget "redkookie-RecipeBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5B8401169310230017C2F7 /* Debug */,
+				5C5B8402169310230017C2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C5B83D0169310230017C2F7 /* Project object */;
+}
