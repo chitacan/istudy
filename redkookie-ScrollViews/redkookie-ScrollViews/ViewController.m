@@ -70,6 +70,10 @@
 }
 
 - (void)scrollViewTwoFingerTapped:(UITapGestureRecognizer*)recognizer {
+    
+    // simulator -> alt key holding and touch
+    //NSLog(@"two tap");
+    
     // Zoom out slightly, capping at the minimum zoom scale specified by the scroll view
     CGFloat newZoomScale = self.scrollView.zoomScale / 1.5f;
     newZoomScale = MAX(newZoomScale, self.scrollView.minimumZoomScale);
@@ -109,7 +113,7 @@
     // 4
     CGRect scrollViewFrame = self.scrollView.frame;
     
-    NSLog([NSString stringWithFormat:@"%f, %f", self.scrollView.contentSize.width, self.scrollView.contentSize.height]);
+    //NSLog([NSString stringWithFormat:@"%f, %f", self.scrollView.contentSize.width, self.scrollView.contentSize.height]);
     
     CGFloat scaleWidth = scrollViewFrame.size.width / self.scrollView.contentSize.width;
     CGFloat scaleHeight = scrollViewFrame.size.height / self.scrollView.contentSize.height;

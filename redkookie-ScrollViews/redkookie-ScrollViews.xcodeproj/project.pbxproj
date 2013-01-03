@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C35876616959BD800C3B381 /* CustomScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C35876516959BD800C3B381 /* CustomScrollViewController.m */; };
+		5C35876A1695A2CE00C3B381 /* PagedScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3587691695A2CE00C3B381 /* PagedScrollViewController.m */; };
+		5C35876D1695AE0500C3B381 /* PeekPagedScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C35876C1695AE0500C3B381 /* PeekPagedScrollViewController.m */; };
+		5C3587701695B20200C3B381 /* ScrollViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C35876F1695B20200C3B381 /* ScrollViewContainer.m */; };
 		5C5B841616931CB80017C2F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5B841516931CB80017C2F7 /* UIKit.framework */; };
 		5C5B841816931CB80017C2F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5B841716931CB80017C2F7 /* Foundation.framework */; };
 		5C5B841A16931CB80017C2F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5B841916931CB80017C2F7 /* CoreGraphics.framework */; };
@@ -28,6 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C35876416959BD800C3B381 /* CustomScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomScrollViewController.h; sourceTree = "<group>"; };
+		5C35876516959BD800C3B381 /* CustomScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScrollViewController.m; sourceTree = "<group>"; };
+		5C3587681695A2CE00C3B381 /* PagedScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagedScrollViewController.h; sourceTree = "<group>"; };
+		5C3587691695A2CE00C3B381 /* PagedScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagedScrollViewController.m; sourceTree = "<group>"; };
+		5C35876B1695AE0500C3B381 /* PeekPagedScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeekPagedScrollViewController.h; sourceTree = "<group>"; };
+		5C35876C1695AE0500C3B381 /* PeekPagedScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeekPagedScrollViewController.m; sourceTree = "<group>"; };
+		5C35876E1695B20200C3B381 /* ScrollViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewContainer.h; sourceTree = "<group>"; };
+		5C35876F1695B20200C3B381 /* ScrollViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewContainer.m; sourceTree = "<group>"; };
 		5C5B841116931CB80017C2F7 /* redkookie-ScrollViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "redkookie-ScrollViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5B841516931CB80017C2F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5C5B841716931CB80017C2F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +122,14 @@
 				5C5B843F16931D100017C2F7 /* photo5.png */,
 				5C5B844016931D100017C2F7 /* slow.png */,
 				5C5B841C16931CB80017C2F7 /* Supporting Files */,
+				5C35876416959BD800C3B381 /* CustomScrollViewController.h */,
+				5C35876516959BD800C3B381 /* CustomScrollViewController.m */,
+				5C3587681695A2CE00C3B381 /* PagedScrollViewController.h */,
+				5C3587691695A2CE00C3B381 /* PagedScrollViewController.m */,
+				5C35876B1695AE0500C3B381 /* PeekPagedScrollViewController.h */,
+				5C35876C1695AE0500C3B381 /* PeekPagedScrollViewController.m */,
+				5C35876E1695B20200C3B381 /* ScrollViewContainer.h */,
+				5C35876F1695B20200C3B381 /* ScrollViewContainer.m */,
 			);
 			path = "redkookie-ScrollViews";
 			sourceTree = "<group>";
@@ -204,6 +224,10 @@
 				5C5B842216931CB80017C2F7 /* main.m in Sources */,
 				5C5B842616931CB80017C2F7 /* AppDelegate.m in Sources */,
 				5C5B843516931CB80017C2F7 /* ViewController.m in Sources */,
+				5C35876616959BD800C3B381 /* CustomScrollViewController.m in Sources */,
+				5C35876A1695A2CE00C3B381 /* PagedScrollViewController.m in Sources */,
+				5C35876D1695AE0500C3B381 /* PeekPagedScrollViewController.m in Sources */,
+				5C3587701695B20200C3B381 /* ScrollViewContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +356,7 @@
 				5C5B843A16931CB80017C2F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
