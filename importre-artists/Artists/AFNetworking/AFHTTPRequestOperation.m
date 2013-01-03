@@ -79,14 +79,14 @@ static inline BOOL AFHTTPOperationStateTransitionIsValid(AFHTTPOperationState fr
 @interface AFHTTPRequestOperation ()
 @property (readwrite, nonatomic, assign) AFHTTPOperationState state;
 @property (readwrite, nonatomic, assign, getter = isCancelled) BOOL cancelled;
-@property (readwrite, nonatomic, retain) NSURLConnection *connection;
-@property (readwrite, nonatomic, retain) NSURLRequest *request;
-@property (readwrite, nonatomic, retain) NSHTTPURLResponse *response;
-@property (readwrite, nonatomic, retain) NSError *error;
-@property (readwrite, nonatomic, retain) NSData *responseBody;
+@property (readwrite, nonatomic, strong) NSURLConnection *connection;
+@property (readwrite, nonatomic, strong) NSURLRequest *request;
+@property (readwrite, nonatomic, strong) NSHTTPURLResponse *response;
+@property (readwrite, nonatomic, strong) NSError *error;
+@property (readwrite, nonatomic, strong) NSData *responseBody;
 @property (readwrite, nonatomic, assign) NSUInteger totalBytesRead;
-@property (readwrite, nonatomic, retain) NSMutableData *dataAccumulator;
-@property (readwrite, nonatomic, retain) NSOutputStream *outputStream;
+@property (readwrite, nonatomic, strong) NSMutableData *dataAccumulator;
+@property (readwrite, nonatomic, strong) NSOutputStream *outputStream;
 @property (readwrite, nonatomic, copy) AFHTTPRequestOperationProgressBlock uploadProgress;
 @property (readwrite, nonatomic, copy) AFHTTPRequestOperationProgressBlock downloadProgress;
 @property (readwrite, nonatomic, copy) AFHTTPRequestOperationCompletionBlock completion;
@@ -116,9 +116,9 @@ static NSThread *_networkRequestThread = nil;
 
 + (void)networkRequestThreadEntryPoint:(id)object {
     do {
-        NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-        [[NSRunLoop currentRunLoop] run];
-        [pool drain];
+        @autoreleasepool {
+            [[NSRunLoop currentRunLoop] run];
+        }
     } while (YES);
 }
 
@@ -136,7 +136,7 @@ static NSThread *_networkRequestThread = nil;
 + (AFHTTPRequestOperation *)operationWithRequest:(NSURLRequest *)urlRequest 
                 completion:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSData *data, NSError *error))completion
 {
-    AFHTTPRequestOperation *operation = [[[self alloc] initWithRequest:urlRequest] autorelease];
+    AFHTTPRequestOperation *operation = [[self alloc] initWithRequest:urlRequest];
     operation.completion = completion;
     
     return operation;
@@ -147,7 +147,7 @@ static NSThread *_networkRequestThread = nil;
                                     outputStream:(NSOutputStream *)outputStream
                                       completion:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error))completion
 {
-    NSMutableURLRequest *mutableURLRequest = [[urlRequest mutableCopy] autorelease];
+    NSMutableURLRequest *mutableURLRequest = [urlRequest mutableCopy];
     if (inputStream) {
         [mutableURLRequest setHTTPBodyStream:inputStream];
         if ([[mutableURLRequest HTTPMethod] isEqualToString:@"GET"]) {
@@ -181,22 +181,6 @@ static NSThread *_networkRequestThread = nil;
     return self;
 }
 
-- (void)dealloc {
-    [_runLoopModes release];
-    
-    [_request release];
-    [_response release];
-    [_responseBody release];
-    [_dataAccumulator release];
-    [_outputStream release]; _outputStream = nil;
-    
-    [_connection release]; _connection = nil;
-	
-    [_uploadProgress release];
-    [_downloadProgress release];
-    [_completion release];
-    [super dealloc];
-}
 
 - (void)setUploadProgressBlock:(void (^)(NSUInteger totalBytesWritten, NSUInteger totalBytesExpectedToWrite))block {
     self.uploadProgress = block;
@@ -253,7 +237,7 @@ static NSThread *_networkRequestThread = nil;
     
     NSStringEncoding textEncoding = CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding((CFStringRef)self.response.textEncodingName));
     
-    return [[[NSString alloc] initWithData:self.responseBody encoding:textEncoding] autorelease];
+    return [[NSString alloc] initWithData:self.responseBody encoding:textEncoding];
 }
 
 #pragma mark - NSOperation
@@ -285,7 +269,7 @@ static NSThread *_networkRequestThread = nil;
 }
 
 - (void)operationDidStart {
-    self.connection = [[[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:NO] autorelease];
+    self.connection = [[NSURLConnection alloc] initWithRequest:self.request delegate:self startImmediately:NO];
     
     NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
     for (NSString *runLoopMode in self.runLoopModes) {
@@ -359,7 +343,7 @@ didReceiveResponse:(NSURLResponse *)response
         [self.outputStream close];
     } else {
         self.responseBody = [NSData dataWithData:self.dataAccumulator];
-        [_dataAccumulator release]; _dataAccumulator = nil;
+         _dataAccumulator = nil;
     }
 
     [self finish];
@@ -373,7 +357,7 @@ didReceiveResponse:(NSURLResponse *)response
     if (self.outputStream) {
         [self.outputStream close];
     } else {
-        [_dataAccumulator release]; _dataAccumulator = nil;
+         _dataAccumulator = nil;
     }
     
     [self finish];

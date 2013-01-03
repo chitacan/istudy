@@ -70,14 +70,14 @@ extern NSString * const AFHTTPOperationDidFinishNotification;
     NSOutputStream *_outputStream;
 }
 
-@property (nonatomic, retain) NSSet *runLoopModes;
+@property (nonatomic, strong) NSSet *runLoopModes;
 
-@property (readonly, nonatomic, retain) NSURLRequest *request;
-@property (readonly, nonatomic, retain) NSHTTPURLResponse *response;
-@property (readonly, nonatomic, retain) NSError *error;
+@property (readonly, nonatomic, strong) NSURLRequest *request;
+@property (readonly, nonatomic, strong) NSHTTPURLResponse *response;
+@property (readonly, nonatomic, strong) NSError *error;
 
-@property (readonly, nonatomic, retain) NSData *responseBody;
-@property (readonly) NSString *responseString;
+@property (readonly, nonatomic, strong) NSData *responseBody;
+@property (weak, readonly) NSString *responseString;
 
 ///---------------------------------------
 /// @name Creating HTTP Request Operations

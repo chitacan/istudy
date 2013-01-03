@@ -20,7 +20,7 @@
 
 @interface AppDelegate : NSObject <UIApplicationDelegate>
 
-@property (retain, nonatomic) UIWindow *window;
-@property (retain, nonatomic) MainViewController *viewController;
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) MainViewController *viewController;
 
 @end

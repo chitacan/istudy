@@ -11,10 +11,10 @@
 @interface SVProgressHUD ()
 
 @property (nonatomic, readwrite) SVProgressHUDMaskType maskType;
-@property (nonatomic, retain) NSTimer *fadeOutTimer;
-@property (nonatomic, retain) UILabel *stringLabel;
-@property (nonatomic, retain) UIImageView *imageView;
-@property (nonatomic, retain) UIActivityIndicatorView *spinnerView;
+@property (nonatomic, strong) NSTimer *fadeOutTimer;
+@property (nonatomic, strong) UILabel *stringLabel;
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIActivityIndicatorView *spinnerView;
 
 - (void)showInView:(UIView*)view status:(NSString*)string networkIndicator:(BOOL)show posY:(CGFloat)posY maskType:(SVProgressHUDMaskType)hudMaskType;
 - (void)setStatus:(NSString*)string;
@@ -129,11 +129,10 @@ static SVProgressHUD *sharedView = nil;
 - (void)dealloc {
 	
 	if(fadeOutTimer != nil)
-		[fadeOutTimer invalidate], [fadeOutTimer release], fadeOutTimer = nil;
+		[fadeOutTimer invalidate], fadeOutTimer = nil;
 	
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
-    [super dealloc];
 }
 
 - (id)initWithFrame:(CGRect)frame {
@@ -158,7 +157,6 @@ static SVProgressHUD *sharedView = nil;
                                  UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin);
         
         [self addSubview:_hudView];
-        [_hudView release];
     }
 	
     return self;
@@ -222,7 +220,7 @@ static SVProgressHUD *sharedView = nil;
 - (void)showInView:(UIView*)view status:(NSString*)string networkIndicator:(BOOL)show posY:(CGFloat)posY maskType:(SVProgressHUDMaskType)hudMaskType {
 	
 	if(fadeOutTimer != nil)
-		[fadeOutTimer invalidate], [fadeOutTimer release], fadeOutTimer = nil;
+		[fadeOutTimer invalidate], fadeOutTimer = nil;
 	
 	if(show)
 		[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
@@ -305,9 +303,9 @@ static SVProgressHUD *sharedView = nil;
 	[self.spinnerView stopAnimating];
     
 	if(fadeOutTimer != nil)
-		[fadeOutTimer invalidate], [fadeOutTimer release], fadeOutTimer = nil;
+		[fadeOutTimer invalidate], fadeOutTimer = nil;
 	
-	fadeOutTimer = [[NSTimer scheduledTimerWithTimeInterval:seconds target:self selector:@selector(dismiss) userInfo:nil repeats:NO] retain];
+	fadeOutTimer = [NSTimer scheduledTimerWithTimeInterval:seconds target:self selector:@selector(dismiss) userInfo:nil repeats:NO];
 }
 
 #pragma mark - Getters
@@ -325,7 +323,6 @@ static SVProgressHUD *sharedView = nil;
 		stringLabel.shadowColor = [UIColor blackColor];
 		stringLabel.shadowOffset = CGSizeMake(0, -1);
 		[_hudView addSubview:stringLabel];
-		[stringLabel release];
     }
     
     return stringLabel;
@@ -336,7 +333,6 @@ static SVProgressHUD *sharedView = nil;
     if (imageView == nil) {
         imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 28, 28)];
 		[_hudView addSubview:imageView];
-		[imageView release];
     }
     
     return imageView;
@@ -349,7 +345,6 @@ static SVProgressHUD *sharedView = nil;
 		spinnerView.hidesWhenStopped = YES;
 		spinnerView.bounds = CGRectMake(0, 0, 37, 37);
 		[_hudView addSubview:spinnerView];
-		[spinnerView release];
     }
     
     return spinnerView;
@@ -360,7 +355,6 @@ static SVProgressHUD *sharedView = nil;
 - (void)memoryWarning:(NSNotification *)notification {
 	
     if (sharedView.superview == nil) {
-        [sharedView release];
         sharedView = nil;
     }
 }

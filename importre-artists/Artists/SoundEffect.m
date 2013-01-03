@@ -26,7 +26,7 @@
 		if (fileURL != nil)
 		{
 			SystemSoundID theSoundID;
-			OSStatus error = AudioServicesCreateSystemSoundID((CFURLRef)fileURL, &theSoundID);
+            OSStatus error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)fileURL, &theSoundID);
 			if (error == kAudioServicesNoError)
 				soundID = theSoundID;
 		}
@@ -37,7 +37,6 @@
 - (void)dealloc
 {
 	AudioServicesDisposeSystemSoundID(soundID);
-	[super dealloc];
 }
 
 - (void)play

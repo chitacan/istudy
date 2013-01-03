@@ -16,7 +16,7 @@
 		7B5465DD142DF55B00863961 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B5465DB142DF55B00863961 /* InfoPlist.strings */; };
 		7B5465DF142DF55B00863961 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5465DE142DF55B00863961 /* main.m */; };
 		7B5465E3142DF55B00863961 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5465E2142DF55B00863961 /* AppDelegate.m */; };
-		7B5465E6142DF55B00863961 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5465E5142DF55B00863961 /* MainViewController.m */; };
+		7B5465E6142DF55B00863961 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5465E5142DF55B00863961 /* MainViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7B5465E9142DF55B00863961 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B5465E7142DF55B00863961 /* MainViewController.xib */; };
 		7B5465F7142DF85900863961 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B5465F4142DF85900863961 /* SVProgressHUD.bundle */; };
 		7B5465F8142DF85900863961 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5465F6142DF85900863961 /* SVProgressHUD.m */; };
@@ -289,9 +289,11 @@
 		7B5465ED142DF55B00863961 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Artists/Artists-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Artists/Artists-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -303,9 +305,11 @@
 		7B5465EE142DF55B00863961 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Artists/Artists-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Artists/Artists-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
