@@ -2,7 +2,7 @@
 
 ## Instance Variables in the Implemetation file
 
-* 이번 tuts를 진행하다보니 아래와 같이 instance variable을 선언해보라는 내용이 있었다.
+이번 tuts를 진행하다보니 아래와 같이 instance variable을 선언해보라는 내용이 있었다.
 
 ```
 @implementation AppDelegate {
@@ -78,41 +78,41 @@ command regex rd 's/^[[:space:]]*$/po [[UIApp keyWindow] recursiveDescription]/'
 (lldb) rd self.view
 po [self.view recursiveDescription]
 (id) $1 = 0x088122b0 <UITableView: 0x8126e00; frame = (0 0; 320 367); clipsToBounds = YES; opaque = NO; autoresize = W+H; gestureRecognizers = <NSArray: 0x747f220>; layer = <CALayer: 0x747ebb0>; contentOffset: {0, 0}>
-   | <PlayerCell: 0x7486540; baseClass = UITableViewCell; frame = (0 110; 320 55); autoresize = W; layer = <CALayer: 0x7486450>>
-   |    | <UITableViewCellContentView: 0x7486480; frame = (0 0; 300 54); gestureRecognizers = <NSArray: 0x7486f50>; layer = <CALayer: 0x74864e0>>
-   |    |    | <UILabel: 0x7486680; frame = (20 4; 185 23); text = 'Dave Brubeck'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 100; layer = <CALayer: 0x7486510>>
-   |    |    | <UILabel: 0x7486940; frame = (20 25; 185 21); text = 'Texas Hold'em Poker'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 101; layer = <CALayer: 0x74869d0>>
-   |    |    | <UIImageView: 0x7486af0; frame = (213 13; 81 27); opaque = NO; autoresize = LM+W+RM+BM; userInteractionEnabled = NO; tag = 102; layer = <CALayer: 0x7486bb0>> - 2StarsSmall.png
-   |    | <UIButton: 0x7486c70; frame = (290 0; 30 54); opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7486d30>>
-   |    |    | <UIImageView: 0x7483500; frame = (10 20; 10 13); clipsToBounds = YES; opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7483560>> - (null)
-   |    | <UIView: 0x74855b0; frame = (0 54; 320 1); autoresize = W+TM; layer = <CALayer: 0x7485610>>
-   | <PlayerCell: 0x7484680; baseClass = UITableViewCell; frame = (0 55; 320 55); autoresize = W; layer = <CALayer: 0x74847d0>>
-   |    | <UITableViewCellContentView: 0x7484800; frame = (0 0; 245 54); gestureRecognizers = <NSArray: 0x74854a0>; layer = <CALayer: 0x7484860>>
-   |    |    | <UILabel: 0x7484890; frame = (20 4; 185 23); text = 'Oscar Peterson'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 100; layer = <CALayer: 0x7484920>>
-   |    |    | <UILabel: 0x7484cb0; frame = (20 25; 185 21); text = 'Spin the Bottle'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 101; layer = <CALayer: 0x7484d40>>
-   |    |    | <UIImageView: 0x7484e60; frame = (173 13; 66 27); opaque = NO; autoresize = LM+W+RM+BM; userInteractionEnabled = NO; tag = 102; layer = <CALayer: 0x7485050>> - 5StarsSmall.png
-   |    | <UIView: 0x747a0d0; frame = (0 54; 320 1); autoresize = W+TM; layer = <CALayer: 0x74834d0>>
-   |    | <UIButton: 0x7485110; frame = (290 0; 30 54); alpha = 0; opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x74851d0>>
-   |    |    | <UIImageView: 0x74836c0; frame = (10 20; 10 13); clipsToBounds = YES; opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7485860>> - (null)
-   |    | <UITableViewCellDeleteConfirmationControl: 0x7609a80; frame = (245 0; 75 55); opaque = NO; layer = <CALayer: 0x7609e70>>
-   |    |    | <_UITableViewCellDeleteConfirmationControl: 0x7609ff0; frame = (6 10; 63 34); clipsToBounds = YES; opaque = NO; tag = 3; layer = <CALayer: 0x760a0b0>>
-   | <PlayerCell: 0x7482810; baseClass = UITableViewCell; frame = (0 0; 320 55); autoresize = W; layer = <CALayer: 0x7482070>>
-   |    | <UITableViewCellContentView: 0x7482950; frame = (0 0; 300 54); gestureRecognizers = <NSArray: 0x7483280>; layer = <CALayer: 0x74829b0>>
-   |    |    | <UILabel: 0x74829e0; frame = (20 4; 185 23); text = 'Bill Evans'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 100; layer = <CALayer: 0x7482a70>>
-   |    |    | <UILabel: 0x7482aa0; frame = (20 25; 185 21); text = 'Tic-Tac-Toe'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 101; layer = <CALayer: 0x74821b0>>
-   |    |    | <UIImageView: 0x7482e30; frame = (213 13; 81 27); opaque = NO; autoresize = LM+W+RM+BM; userInteractionEnabled = NO; tag = 102; layer = <CALayer: 0x7482bc0>> - 4StarsSmall.png
-   |    | <UIButton: 0x7482ef0; frame = (290 0; 30 54); opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7482fb0>>
-   |    |    | <UIImageView: 0x74874a0; frame = (10 20; 10 13); clipsToBounds = YES; opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7487660>> - (null)
-   |    | <UIView: 0x7483650; frame = (0 54; 320 1); autoresize = W+TM; layer = <CALayer: 0x7484a40>>
-   | <UIImageView: 0x747faa0; frame = (0 360; 320 7); alpha = 0; opaque = NO; autoresize = TM; userInteractionEnabled = NO; layer = <CALayer: 0x747fb40>> - (null)
-   | <_UITableViewSeparatorView: 0x74815a0; frame = (0 219; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481630>>
-   | <_UITableViewSeparatorView: 0x74818e0; frame = (0 274; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481940>>
-   | <_UITableViewSeparatorView: 0x7481970; frame = (0 329; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x74819d0>>
-   | <_UITableViewSeparatorView: 0x7481a00; frame = (0 384; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481a60>>
-   | <_UITableViewSeparatorView: 0x7481a90; frame = (0 439; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481af0>>
-   | <_UITableViewSeparatorView: 0x7481b40; frame = (0 494; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481ba0>>
-   | <_UITableViewSeparatorView: 0x7481bd0; frame = (0 549; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481c30>>
-   | <UIImageView: 0x747fc00; frame = (313 448; 7 7); alpha = 0; opaque = NO; autoresize = LM; userInteractionEnabled = NO; layer = <CALayer: 0x747fca0>> - (null)
+	| <PlayerCell: 0x7486540; baseClass = UITableViewCell; frame = (0 110; 320 55); autoresize = W; layer = <CALayer: 0x7486450>>
+	|    | <UITableViewCellContentView: 0x7486480; frame = (0 0; 300 54); gestureRecognizers = <NSArray: 0x7486f50>; layer = <CALayer: 0x74864e0>>
+	|    |    | <UILabel: 0x7486680; frame = (20 4; 185 23); text = 'Dave Brubeck'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 100; layer = <CALayer: 0x7486510>>
+	|    |    | <UILabel: 0x7486940; frame = (20 25; 185 21); text = 'Texas Hold'em Poker'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 101; layer = <CALayer: 0x74869d0>>
+	|    |    | <UIImageView: 0x7486af0; frame = (213 13; 81 27); opaque = NO; autoresize = LM+W+RM+BM; userInteractionEnabled = NO; tag = 102; layer = <CALayer: 0x7486bb0>> - 2StarsSmall.png
+	|    | <UIButton: 0x7486c70; frame = (290 0; 30 54); opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7486d30>>
+	|    |    | <UIImageView: 0x7483500; frame = (10 20; 10 13); clipsToBounds = YES; opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7483560>> - (null)
+	|    | <UIView: 0x74855b0; frame = (0 54; 320 1); autoresize = W+TM; layer = <CALayer: 0x7485610>>
+	| <PlayerCell: 0x7484680; baseClass = UITableViewCell; frame = (0 55; 320 55); autoresize = W; layer = <CALayer: 0x74847d0>>
+	|    | <UITableViewCellContentView: 0x7484800; frame = (0 0; 245 54); gestureRecognizers = <NSArray: 0x74854a0>; layer = <CALayer: 0x7484860>>
+	|    |    | <UILabel: 0x7484890; frame = (20 4; 185 23); text = 'Oscar Peterson'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 100; layer = <CALayer: 0x7484920>>
+	|    |    | <UILabel: 0x7484cb0; frame = (20 25; 185 21); text = 'Spin the Bottle'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 101; layer = <CALayer: 0x7484d40>>
+	|    |    | <UIImageView: 0x7484e60; frame = (173 13; 66 27); opaque = NO; autoresize = LM+W+RM+BM; userInteractionEnabled = NO; tag = 102; layer = <CALayer: 0x7485050>> - 5StarsSmall.png
+	|    | <UIView: 0x747a0d0; frame = (0 54; 320 1); autoresize = W+TM; layer = <CALayer: 0x74834d0>>
+	|    | <UIButton: 0x7485110; frame = (290 0; 30 54); alpha = 0; opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x74851d0>>
+	|    |    | <UIImageView: 0x74836c0; frame = (10 20; 10 13); clipsToBounds = YES; opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7485860>> - (null)
+	|    | <UITableViewCellDeleteConfirmationControl: 0x7609a80; frame = (245 0; 75 55); opaque = NO; layer = <CALayer: 0x7609e70>>
+	|    |    | <_UITableViewCellDeleteConfirmationControl: 0x7609ff0; frame = (6 10; 63 34); clipsToBounds = YES; opaque = NO; tag = 3; layer = <CALayer: 0x760a0b0>>
+	| <PlayerCell: 0x7482810; baseClass = UITableViewCell; frame = (0 0; 320 55); autoresize = W; layer = <CALayer: 0x7482070>>
+	|    | <UITableViewCellContentView: 0x7482950; frame = (0 0; 300 54); gestureRecognizers = <NSArray: 0x7483280>; layer = <CALayer: 0x74829b0>>
+	|    |    | <UILabel: 0x74829e0; frame = (20 4; 185 23); text = 'Bill Evans'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 100; layer = <CALayer: 0x7482a70>>
+	|    |    | <UILabel: 0x7482aa0; frame = (20 25; 185 21); text = 'Tic-Tac-Toe'; clipsToBounds = YES; opaque = NO; autoresize = TM+BM; userInteractionEnabled = NO; tag = 101; layer = <CALayer: 0x74821b0>>
+	|    |    | <UIImageView: 0x7482e30; frame = (213 13; 81 27); opaque = NO; autoresize = LM+W+RM+BM; userInteractionEnabled = NO; tag = 102; layer = <CALayer: 0x7482bc0>> - 4StarsSmall.png
+	|    | <UIButton: 0x7482ef0; frame = (290 0; 30 54); opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7482fb0>>
+	|    |    | <UIImageView: 0x74874a0; frame = (10 20; 10 13); clipsToBounds = YES; opaque = NO; userInteractionEnabled = NO; layer = <CALayer: 0x7487660>> - (null)
+	|    | <UIView: 0x7483650; frame = (0 54; 320 1); autoresize = W+TM; layer = <CALayer: 0x7484a40>>
+	| <UIImageView: 0x747faa0; frame = (0 360; 320 7); alpha = 0; opaque = NO; autoresize = TM; userInteractionEnabled = NO; layer = <CALayer: 0x747fb40>> - (null)
+	| <_UITableViewSeparatorView: 0x74815a0; frame = (0 219; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481630>>
+	| <_UITableViewSeparatorView: 0x74818e0; frame = (0 274; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481940>>
+	| <_UITableViewSeparatorView: 0x7481970; frame = (0 329; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x74819d0>>
+	| <_UITableViewSeparatorView: 0x7481a00; frame = (0 384; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481a60>>
+	| <_UITableViewSeparatorView: 0x7481a90; frame = (0 439; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481af0>>
+	| <_UITableViewSeparatorView: 0x7481b40; frame = (0 494; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481ba0>>
+	| <_UITableViewSeparatorView: 0x7481bd0; frame = (0 549; 320 1); opaque = NO; autoresize = W; layer = <CALayer: 0x7481c30>>
+	| <UIImageView: 0x747fc00; frame = (313 448; 7 7); alpha = 0; opaque = NO; autoresize = LM; userInteractionEnabled = NO; layer = <CALayer: 0x747fca0>> - (null)
 ```
 
 [NSHipster](http://www.nshipster.com/reader-submissions-new-years-2013/)에 다른 유용한 팁들이 더 있다!!
@@ -133,6 +133,96 @@ tutorial part 1 마지막에 auto resizing mask를 통해 UIImageView의 사이�
 * 동작이 되지 않는 정확한 이유는 아직 알 수 없으나, [여기](http://stackoverflow.com/questions/12833176/indentation-not-working-on-custom-uitableviewcell)의 정보를 토대로 분석해 본결과,
 	* prototype cell에 더해진 뷰들은 실제로 UITableViewCellContentView의 subview임
 	* ratingImageView의 `constraints`를 정할때 UITableViewCellContentView가 아닌 UITableViewCell과의 관계가 정해짐([버그](http://stackoverflow.com/questions/12833176/indentation-not-working-on-custom-uitableviewcell)인듯??)
+
+## SEL은 어디에 선언되어 있는가??
+
+`objc.h` 에 아래와 같이 정의되어 있음
+```
+typedef struct objc_selector 	*SEL;
+```
+그렇다면 `objc_selector`는 ??
+
+* [http://www.cocoabuilder.com/archive/cocoa/34093-where-is-defined-sel.html](http://www.cocoabuilder.com/archive/cocoa/34093-where-is-defined-sel.html)
+* [http://unixjunkie.blogspot.kr/2006/02/nil-and-nil.html](http://unixjunkie.blogspot.kr/2006/02/nil-and-nil.html). 애플 개발자들이 정말 감추고 싶은 구조체. 더 이상 궁금해 하지 말자 ㅋ
+* 크게 관련은 없지만 [볼만한 글(개발자 개념잡기)](http://pole2win.tistory.com/entry/Objective-C-cocoa-core-foundation).
+
+## delegate 패턴
+
+tutorial part 2의 `PlayerDetailsViewControllerDelegate` 를 보고 생각해 봤음
+
+* delegate는 객체의 특정 동작을 다른 객체에 위임(다른 객체가 그 일을 하도록)하는 것이다.
+	* 위임하는 이유에는 여러가지가 있을 수 있다.
+* 어떻게 보면 자바에서 자주 사용되는 listener 인터페이스들과 같다. (프로토콜이 인터페이스니까)
+
+delegate 패턴을 구현하려면 다음과 같이 생각해 나가면 되겠다.
+
+* 위임하고자 하는 동작(메소드)를 정의한다.
+* 해당 메소듣들을 묶어 `*Delegate` 프로토콜을 정의한다.
+* `*Delegate` 를 구현한 클래스를 참조할 수 있는 변수 `id<*Delegate>`를 선언한다.
+* `id<*Delegate>` 변수를 통해 위임할 메시지를 전달한다.
+* `*Delegate`를 구현한다.
+* `id<*Delegate>`를 세팅한다.
+
+## send message to nil
+
+nil에 message를 보내도 크래쉬되지 않는다!!. 어떻게 보면 자바스크립트와 약간 비슷한데, nil에 메시지를 보내도 ios 앱은 크래시 되지 않는다.
+nil에 메시지르 보내면 그냥 0이 리턴된다. 그래서 많은 경우 objective-c에서는 java에서 자주 사용되는 null 체크 구문이 필요하지 않다.
+
+또한, [nil은 어떠한 selector에도 반응할 수 있는 객체](http://stackoverflow.com/a/310215/588388) 라 할 수 있다.
+그래서 아래의 코드를 실행하면 "self.delegate is nil" 이 출력된다.
+```
+// self.delegate == nil 일때,
+if (![self.delegate performSelector:@selector(somemethod)]) {
+	NSLog(@"self.delegate is nil");
+}
+```
+
+## NS_AVAILABLE_IOS 매크로
+
+해당 메소드가 ios 어느 버전부터 사용이 가능한지 나타낸다.
+
+* NS_AVAILABLE_IOS 매크로는 `NSObjCRuntime.h`에 선언되어 있다. (`Availability.h`, `AvailabilityInternal.h`도 참고)
+* [SDK Based Development](https://developer.apple.com/library/mac/#documentation/developertools/conceptual/cross_development/Introduction/Introduction.html#//apple_ref/doc/uid/10000163-BCICHGIE)에 이 매크로를 사용해 어떤 플랫폼과 SDK에서 해당 클래스, 메소드의 수행여부를 결정하는지 간략하게 설명되어 있다.
+	* 이 글에서는 주로 weaked link된 프레임워크를 사용하는 내용이 주로 설명되어 있는데, (strong linked 되면 컴파일때 다 걸러낼 수 있어서??) 프레임워크를 weaked link 하는 법은 [여기](http://stackoverflow.com/questions/6480765/how-do-i-weak-link-frameworks-on-xcode-4) 설명되어 있다.
+
+NS_AVAILABLE_IOS 는 실제로 다음과 같이 정의되어 있다.
+
+```
+#define NS_AVAILABLE_IOS(_ios) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_##_ios)
+```
+
+* 음 대충 `__MAC_NA` 는 알겠는데, `__IPHONE_##_ios` 이놈은 뭔가??
+	* `##` 은 두개의 토큰을 연결해 준다. ([참고](http://www.mikeash.com/pyblog/friday-qa-2010-12-31-c-macro-tips-and-tricks.html))
+	* 즉 `NS_AVAILABLE_IOS(_ios)`의 인자로 전달된 값과 `__IPHONE_`을 연결해 `__IPHONE_6_0` 가 정의된다.
+	* 그리고 `Availability.h` 에서 `__AVAILABILITY_INTERNAL__IPHONE_6_0` 가 만들어지며,
+	* 마지막으로 `AvailabilityInternal.h` 에서 `__attribute__((availability(ios,introduced=6.0)))` 로 치환된다.
+
+`__attribute__` 는 뭘까?
+
+GNU C 에서 주로 사용하는 옵션으로 메소드나 구조체의 속성([pack 속성](http://kldp.org/node/3518))을 정의하는 매크로이다. LLVM에서는 약간 다르게 형태로 사용된다. 
+이놈은 LLVM에서도 clang이 처리하는데 지금 [관련 페이지](http://clang.llvm.org/docs/LanguageExtensions.html) 가 접속이 되지 않는다.
+
+## define NS_DEPRECATED_IOS(_iosIntro, _iosDep) 매크로
+
+비슷하게 이놈도 파봤다. 결국엔 `AvailabilityInternal.h`에서 `__attribute__((deprecated))` 로 치환된다.
+
+다음과 같이 특정 메소드나 속성에 추가하면 컴파일 타임에 llvm이 어느 버전에서 deprecated 되었는지 알려준다.
+
+```
+@property (nonatomic,weak) id<PlayerDetailsViewControllerDelegate> delegate NS_DEPRECATED_IOS(3_0,4_0);
+```
+
+## iOS 는 2.0 부터 있다??
+
+NS_AVAILABLE_IOS 매크로를 알게된 사실인데 1.0이 없다 :confused:
+
+## Derived Data
+
+xcode를 통해 프로젝트를 생성해 빌드하면 빌드 중간과정에 생긴 파일들이나, 빌드 결과물 (*.app)이 프로젝트 path내에 없다는 것을 알 수 있다.
+
+어디있냐고? `Organizer > Projects` 의 각 프로젝트에 `Derived Data`의 path를 살펴보자.
+
+## Segue
 
 
 

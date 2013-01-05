@@ -52,7 +52,13 @@
                             <outlet property="delegate" destination="LpY-ON-fVf" id="peG-3q-LQb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Players" id="fUA-z1-5pM"/>
+                    <navigationItem key="navigationItem" title="Players" id="fUA-z1-5pM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1dC-EI-SvY">
+                            <connections>
+                                <segue destination="qz1-xP-cq2" kind="modal" identifier="AddPlayer" id="qgD-pn-5Ji"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlayerCell" rowHeight="55" id="Ku7-MP-xwy" customClass="PlayerCell">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
@@ -82,7 +88,48 @@
                 </tableViewCell>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hK0-K1-hW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="-1457"/>
+            <point key="canvasLocation" x="-3994" y="-1945"/>
+        </scene>
+        <!--Player Details View Controller - Add Player-->
+        <scene sceneID="ws0-ew-ZOL">
+            <objects>
+                <tableViewController id="aHW-m0-xtk" customClass="PlayerDetailsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DfO-Hh-qvc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="PSW-9O-sDW">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aHW-m0-xtk" id="ezN-ov-vPs"/>
+                            <outlet property="delegate" destination="aHW-m0-xtk" id="j21-FS-byF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Player" id="fIm-eF-i1t">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="muB-Zw-J9N">
+                            <connections>
+                                <action selector="cancel:" destination="aHW-m0-xtk" id="p7V-6y-fyL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Xmf-k7-Km4">
+                            <connections>
+                                <action selector="done:" destination="aHW-m0-xtk" id="hIP-Bx-lRr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHc-NU-fPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3011" y="-1945"/>
         </scene>
         <!--View Controller - Gestures-->
         <scene sceneID="LsI-4g-cgL">
@@ -105,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ro-lR-O3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1083" y="-793"/>
+            <point key="canvasLocation" x="-4501" y="-1281"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ke0-XI-w6O">
@@ -124,7 +171,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lD-yD-Uj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="-793"/>
+            <point key="canvasLocation" x="-5242" y="-1281"/>
         </scene>
         <!--Navigation Controller - Players-->
         <scene sceneID="cdl-Y9-Uhn">
@@ -147,7 +194,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiQ-eF-cwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1083" y="-1457"/>
+            <point key="canvasLocation" x="-4501" y="-1945"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lAj-9K-hvE">
+            <objects>
+                <navigationController id="qz1-xP-cq2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sAe-XN-kPp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aHW-m0-xtk" kind="relationship" relationship="rootViewController" id="20F-3H-Swa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzm-Sb-ZYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3501" y="-1945"/>
         </scene>
     </scenes>
     <resources>
@@ -161,6 +226,13 @@
                 <relationship kind="outlet" name="gameLable" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="ratingImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="PlayerDetailsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayerDetailsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="done:"/>
             </relationships>
         </class>
         <class className="PlayerViewController" superclassName="UITableViewController">

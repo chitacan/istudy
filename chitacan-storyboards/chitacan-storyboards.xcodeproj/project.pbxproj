@@ -45,6 +45,7 @@
 		272D6F1B1691B8E7007F21DD /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 272D6F1A1691B8E7007F21DD /* Player.m */; };
 		272D8CF91691BAE100067423 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272D8CF81691BAE100067423 /* PlayerViewController.m */; };
 		272D8CFC1691D60F00067423 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 272D8CFB1691D60F00067423 /* PlayerCell.m */; };
+		27DDE68116933C07002F1CB8 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DDE68016933C07002F1CB8 /* PlayerDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,8 @@
 		272D8CF81691BAE100067423 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		272D8CFA1691D60F00067423 /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
 		272D8CFB1691D60F00067423 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
+		27DDE67F16933C07002F1CB8 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		27DDE68016933C07002F1CB8 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				272D6ED116917AA7007F21DD /* AppDelegate.h */,
 				272D6ED216917AA7007F21DD /* AppDelegate.m */,
 				272D6EDA16917AA7007F21DD /* MainStoryboard.storyboard */,
+				27DDE67F16933C07002F1CB8 /* PlayerDetailsViewController.h */,
+				27DDE68016933C07002F1CB8 /* PlayerDetailsViewController.m */,
 				272D8CFA1691D60F00067423 /* PlayerCell.h */,
 				272D8CFB1691D60F00067423 /* PlayerCell.m */,
 				272D8CF81691BAE100067423 /* PlayerViewController.m */,
@@ -298,6 +303,7 @@
 				272D6F1B1691B8E7007F21DD /* Player.m in Sources */,
 				272D8CF91691BAE100067423 /* PlayerViewController.m in Sources */,
 				272D8CFC1691D60F00067423 /* PlayerCell.m in Sources */,
+				27DDE68116933C07002F1CB8 /* PlayerDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

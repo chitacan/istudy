@@ -25,7 +25,6 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    NSLog(@"layout sub views!! %@", nameLabel.text);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

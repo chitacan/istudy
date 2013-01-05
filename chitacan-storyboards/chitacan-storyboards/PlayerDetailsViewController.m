@@ -1,22 +1,20 @@
 //
-//  PlayerViewController.m
+//  PlayerDetailsViewController.m
 //  chitacan-storyboards
 //
-//  Created by kyung yeol Kim on 12. 12. 31..
-//  Copyright (c) 2012년 kyung yeol Kim. All rights reserved.
+//  Created by kyung yeol Kim on 13. 1. 2..
+//  Copyright (c) 2013년 kyung yeol Kim. All rights reserved.
 //
 
-#import "PlayerViewController.h"
-#import "Player.h"
-#import "PlayerCell.h"
+#import "PlayerDetailsViewController.h"
 
-@interface PlayerViewController ()
+@interface PlayerDetailsViewController ()
 
 @end
 
-@implementation PlayerViewController
+@implementation PlayerDetailsViewController
 
-@synthesize players;
+@synthesize delegate;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -44,48 +42,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIImage*)imageForRating:(int)rating {
-    switch (rating) {
-        case 1: return [UIImage imageNamed:@"1StarSmall.png"];
-        case 2: return [UIImage imageNamed:@"2StarsSmall.png"];
-        case 3: return [UIImage imageNamed:@"3StarsSmall.png"];
-        case 4: return [UIImage imageNamed:@"4StarsSmall.png"];
-        case 5: return [UIImage imageNamed:@"5StarsSmall.png"];
-    }
-    return nil;
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.players count];
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // get cell's views from tags
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PlayerCell" forIndexPath:indexPath];
-//    Player *player = [self.players objectAtIndex:indexPath.row];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-//    UILabel *nameLabel = (UILabel*) [cell viewWithTag:100];
-//    UILabel *gameLabel = (UILabel*) [cell viewWithTag:101];
-//    UIImageView *ratingImageView = (UIImageView*) [cell viewWithTag:102];
-//    
-//    nameLabel.text = player.name;
-//    gameLabel.text = player.game;
-//    ratingImageView.image = [self imageForRating:player.rating];
-    
-    PlayerCell *cell = (PlayerCell*) [tableView dequeueReusableCellWithIdentifier:@"PlayerCell"];
-    Player *player = [self.players objectAtIndex:indexPath.row];
-    cell.nameLabel.text = player.name;
-    cell.gameLable.text = player.game;
-    cell.ratingImageView.image = [self imageForRating:player.rating];
+    // Configure the cell...
     
     return cell;
 }
@@ -99,20 +77,19 @@
 }
 */
 
-
+/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [self.players removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
+*/
 
 /*
 // Override to support rearranging the table view.
@@ -143,24 +120,14 @@
      */
 }
 
-#pragma mark - PlayerDetailsViewControllerDelegate
+#pragma mark - handle Bar Button Events
 
--(void)playerDetailsViewControllerDidCancel:(PlayerDetailsViewController *)controller {
-    [self dismissViewControllerAnimated:YES completion:nil];
+-(IBAction)done:(id)sender {
+    [self.delegate playerDetailsViewControllerDidDone:self];
 }
 
--(void)playerDetailsViewControllerDidDone:(PlayerDetailsViewController *)controller {
-    [self dismissViewControllerAnimated:YES completion:nil];    
-}
-
-#pragma mark - segue for PlayerDetailsViewController
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"AddPlayer"]) {
-        UINavigationController* navController = segue.destinationViewController;
-        PlayerDetailsViewController* detailController = [[navController viewControllers] objectAtIndex:0];
-        detailController.delegate = self;
-    }
+-(IBAction)cancel:(id)sender {
+    [self.delegate playerDetailsViewControllerDidCancel:self];
 }
 
 @end
