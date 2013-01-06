@@ -13,7 +13,7 @@
 * 컴파일 에러가 떨어지지 않아서 이래도 되나 했는데, 정확하게 왜, 어느 경우에 사용할 수 있는지를 몰라 검색해 보았음
 * [이곳](http://mobiledevelopertips.com/objective-c/instance-variables-in-implementation-file.html)의 내용을 정리해 보면
 	* instance variable을 implementation file에 선언할 수 있는건 LLVM 컴파일러 때문 (오!! :smirk:)
-	* 이를 활용하면 실제로 사용하고 public 으로 사용할 변수면 interface 에 공개할 수 있어 유용하다.
+	* 이를 활용하면 public 으로 사용할 변수 interface 에 공개할 수 있어 유용하다.
 
 ## @ symbol at objective-c
 
@@ -47,6 +47,10 @@ brace("{") 앞에 @ 심볼을 붙여 `NSDictionary`의 인스턴스를 바로 �
 ```
 NSDictionary *splunge = @{ @"hi" :  @"bork", @"greeble" :  @"bork" };
 ```
+
+### class
+
+@class 는 어떤 상황에 사용해야 하나??
 
 ## lldb 디버거
 
@@ -166,7 +170,7 @@ delegate 패턴을 구현하려면 다음과 같이 생각해 나가면 되겠�
 ## send message to nil
 
 nil에 message를 보내도 크래쉬되지 않는다!!. 어떻게 보면 자바스크립트와 약간 비슷한데, nil에 메시지를 보내도 ios 앱은 크래시 되지 않는다.
-nil에 메시지르 보내면 그냥 0이 리턴된다. 그래서 많은 경우 objective-c에서는 java에서 자주 사용되는 null 체크 구문이 필요하지 않다.
+nil에 메시지를 보내면 그냥 0이 리턴된다. 그래서 많은 경우 objective-c에서는 java에서 자주 사용되는 null 체크 구문이 필요하지 않다.
 
 또한, [nil은 어떠한 selector에도 반응할 수 있는 객체](http://stackoverflow.com/a/310215/588388) 라 할 수 있다.
 그래서 아래의 코드를 실행하면 "self.delegate is nil" 이 출력된다.
@@ -176,6 +180,8 @@ if (![self.delegate performSelector:@selector(somemethod)]) {
 	NSLog(@"self.delegate is nil");
 }
 ```
+
+---------------------------------------------
 
 ## NS_AVAILABLE_IOS 매크로
 
@@ -200,7 +206,10 @@ NS_AVAILABLE_IOS 는 실제로 다음과 같이 정의되어 있다.
 `__attribute__` 는 뭘까?
 
 GNU C 에서 주로 사용하는 옵션으로 메소드나 구조체의 속성([pack 속성](http://kldp.org/node/3518))을 정의하는 매크로이다. LLVM에서는 약간 다르게 형태로 사용된다. 
-이놈은 LLVM에서도 clang이 처리하는데 지금 [관련 페이지](http://clang.llvm.org/docs/LanguageExtensions.html) 가 접속이 되지 않는다.
+이놈은 LLVM에서도 clang이 처리하는데 ~~지금 [관련 페이지](http://clang.llvm.org/docs/LanguageExtensions.html) 가 접속이 되지 않는다.~~ 이에 관해서는 아래 링크 참조
+
+* [Clang Compiler User’s Manual](http://clang.llvm.org/docs/UsersManual.html#introduction)
+* [Availability attribute](http://clang.llvm.org/docs/LanguageExtensions.html#availability-attribute)
 
 ## define NS_DEPRECATED_IOS(_iosIntro, _iosDep) 매크로
 
@@ -224,7 +233,36 @@ xcode를 통해 프로젝트를 생성해 빌드하면 빌드 중간과정에 �
 
 ## Segue
 
+`+` 버튼을 `ctrl + drag` 로 `PlayerDetailView`에 연결할 때, 아래의 코드가 생성된다.
 
+```
+<barButtonItem key="rightBarButtonItem" systemItem="add" id="1dC-EI-SvY">
+	<connections>
+		<segue destination="qz1-xP-cq2" kind="modal" identifier="AddPlayer" id="qgD-pn-5Ji"/>
+	</connections>
+</barButtonItem>
+```
+
+위의 정보를 바탕으로 segue 오브젝트가 생성되어 동작이 수행된다.
+
+참고로, 아래와 같이 segue의 동작을 block으로 커스터마이즈 할 수 있는 메소드가 있다.
+
+```
++ (id)segueWithIdentifier:(NSString *)identifier source:(UIViewController *)source destination:(UIViewController *)destination performHandler:(void (^)(void))performHandler NS_AVAILABLE_IOS(6_0);
+
+```
+
+## what is "First Responder" ??
+
+다음의 코드에서 도대체 무슨 일이 일어나는 걸까??
+
+```
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0)
+        [self.nameTextField becomeFirstResponder];
+}
+```
 
 ## emoji
 

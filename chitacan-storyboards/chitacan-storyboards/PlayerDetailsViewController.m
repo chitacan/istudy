@@ -7,14 +7,19 @@
 //
 
 #import "PlayerDetailsViewController.h"
+#import "Player.h"
 
 @interface PlayerDetailsViewController ()
 
 @end
 
-@implementation PlayerDetailsViewController
+@implementation PlayerDetailsViewController {
+    NSString *game;
+}
 
 @synthesize delegate;
+@synthesize nameTextField;
+@synthesize detailLabel;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,44 +33,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.detailLabel.text = game;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
 }
 
 /*
@@ -107,27 +81,64 @@
 }
 */
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"PickGame"])
+	{
+		GamePickerViewController *gamePickerViewController =
+        segue.destinationViewController;
+		gamePickerViewController.delegate = self;
+		gamePickerViewController.game = game;
+	}
+}
+
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    if (indexPath.section == 0)
+        [self.nameTextField becomeFirstResponder];
 }
 
 #pragma mark - handle Bar Button Events
 
 -(IBAction)done:(id)sender {
-    [self.delegate playerDetailsViewControllerDidDone:self];
+    
+    Player *player = [[Player alloc]init];
+    player.name = self.nameTextField.text;
+    player.game = @"Chess";
+    player.rating = 1;
+    
+    [self.delegate playerDetailsViewController:self didAddPlayer:player];
 }
 
 -(IBAction)cancel:(id)sender {
     [self.delegate playerDetailsViewControllerDidCancel:self];
 }
+
+#pragma mark - GamePickerControllerDelegate
+
+- (void)gamePickerViewController:(GamePickerViewController *)controller
+                   didSelectGame:(NSString *)theGame {
+    game = theGame;
+    self.detailLabel.text = game;
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - see when storyboards init & dealloc
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+	if ((self = [super initWithCoder:aDecoder]))
+	{
+		NSLog(@"init PlayerDetailsViewController");
+        game = @"Chess";
+	}
+	return self;
+}
+- (void)dealloc
+{
+	NSLog(@"dealloc PlayerDetailsViewController");
+}
+
 
 @end

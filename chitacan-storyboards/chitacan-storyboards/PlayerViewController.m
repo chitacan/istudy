@@ -149,8 +149,18 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)playerDetailsViewControllerDidDone:(PlayerDetailsViewController *)controller {
-    [self dismissViewControllerAnimated:YES completion:nil];    
+-(void)playerDetailsViewController:(PlayerDetailsViewController *)controller didAddPlayer:(Player *)player {
+    [players addObject:player];
+    
+    NSIndexPath *indexPath =[NSIndexPath indexPathForRow:[self.players count] - 1 inSection:0];
+    NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(PlayerDetailsViewController*)controllerDidAddPlayer:(Player *)player {
+    
 }
 
 #pragma mark - segue for PlayerDetailsViewController

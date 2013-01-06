@@ -7,19 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GamePickerViewController.h"
 
+@class Player;
 @class PlayerDetailsViewController;
 
 @protocol PlayerDetailsViewControllerDelegate <NSObject>
 
 - (void)playerDetailsViewControllerDidCancel:(PlayerDetailsViewController*)controller;
-- (void)playerDetailsViewControllerDidDone:(PlayerDetailsViewController*)controller;
+- (void)playerDetailsViewController:(PlayerDetailsViewController*)controller didAddPlayer:(Player*)player;
 
 @end
 
-@interface PlayerDetailsViewController : UITableViewController
+@interface PlayerDetailsViewController : UITableViewController <GamePickerViewControllerDelegate>
 
 @property (nonatomic,weak) id<PlayerDetailsViewControllerDelegate> delegate NS_DEPRECATED_IOS(3_0,4_0);
+
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 
 -(IBAction)cancel:(id)sender;
 -(IBAction)done:(id)sender;
