@@ -1,3 +1,27 @@
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Stroyboards](#stroyboards)
+	- [Instance Variables in the Implemetation file](#instance-variables-in-the-implemetation-file)
+	- [@ symbol at objective-c](#@-symbol-at-objective-c)
+		- [NSNumber](#nsnumber)
+		- [Array](#array)
+		- [Dictionary](#dictionary)
+		- [class](#class)
+	- [lldb 디버거](#lldb-디버거)
+		- [LLDB View Hierarchy Dump](#lldb-view-hierarchy-dump)
+	- [Auto resizing과 Constraints](#auto-resizing과-constraints)
+	- [SEL은 어디에 선언되어 있는가??](#sel은-어디에-선언되어-있는가??)
+	- [delegate 패턴](#delegate-패턴)
+	- [send message to nil](#send-message-to-nil)
+	- [NS_AVAILABLE_IOS 매크로](#ns_available_ios-매크로)
+	- [define NS_DEPRECATED_IOS(_iosIntro, _iosDep) 매크로](#define-ns_deprecated_ios_iosintro-_iosdep-매크로)
+	- [iOS 는 2.0 부터 있다??](#ios-는-20-부터-있다??)
+	- [Derived Data](#derived-data)
+	- [Segue](#segue)
+	- [what is "First Responder" ??](#what-is-"first-responder"-??)
+	- [emoji](#emoji)
+	- [](#)
+
 # Stroyboards
 
 ## Instance Variables in the Implemetation file
@@ -51,6 +75,11 @@ NSDictionary *splunge = @{ @"hi" :  @"bork", @"greeble" :  @"bork" };
 ### class
 
 @class 는 어떤 상황에 사용해야 하나??
+
+* 전방참조에 사용됨
+	* 헤더 파일을 직접 import 하지 않고, 해당 클래스가 있다라는 것만 선언해 주는 것. 
+	* 해당 클래스를 포인터로 사용할 때만 가능하다. (보통 포인터는 4바이트 이므로)
+
 
 ## lldb 디버거
 
@@ -194,7 +223,7 @@ if (![self.delegate performSelector:@selector(somemethod)]) {
 NS_AVAILABLE_IOS 는 실제로 다음과 같이 정의되어 있다.
 
 ```
-#define NS_AVAILABLE_IOS(_ios) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_##_ios)
+define NS_AVAILABLE_IOS(_ios) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_##_ios)
 ```
 
 * 음 대충 `__MAC_NA` 는 알겠는데, `__IPHONE_##_ios` 이놈은 뭔가??
