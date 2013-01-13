@@ -20,7 +20,6 @@
 	- [Segue](#segue)
 	- [what is "First Responder" ??](#what-is-"first-responder"-??)
 	- [emoji](#emoji)
-	- [](#)
 
 # Stroyboards
 
